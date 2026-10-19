@@ -1,0 +1,1963 @@
+{
+  "generated_from": "C:/Users/G1/Downloads/Beyond Academics - Blog Version.md",
+  "categories": [
+    {
+      "title": "🤖 Robotics & Engineering",
+      "slug": "-robotics-engineering",
+      "competitions": [
+        {
+          "name": "FIRST LEGO League Explore",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "6–10 Years",
+          "format": "Team",
+          "difficulty": "⭐",
+          "best_for": "Young beginners exploring STEM",
+          "official_website": "https://firstinspires.org",
+          "verification_note": ""
+        },
+        {
+          "name": "FIRST LEGO League Challenge",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "9–16 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Robotics, teamwork & innovation",
+          "official_website": "https://firstinspires.org",
+          "verification_note": ""
+        },
+        {
+          "name": "World Robot Olympiad (WRO)",
+          "category": "Robotics",
+          "level": "National → International",
+          "grades": "8–19 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics & autonomous programming",
+          "official_website": "https://wro-association.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Robotex India",
+          "category": "Robotics",
+          "level": "National → International",
+          "grades": "7–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics & innovation pathway",
+          "official_website": "https://robotex-india.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Robotex International",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Varies",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Global robotics competition",
+          "official_website": "https://robotex.international",
+          "verification_note": ""
+        },
+        {
+          "name": "FIRST Tech Challenge (FTC)",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "12–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Engineering & advanced robotics",
+          "official_website": "https://firstinspires.org",
+          "verification_note": ""
+        },
+        {
+          "name": "FIRST Robotics Competition (FRC)",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "14–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Industrial-scale robotics",
+          "official_website": "https://firstinspires.org",
+          "verification_note": ""
+        },
+        {
+          "name": "FIRST Global Challenge",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "14–18 Years",
+          "format": "National Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Representing your country",
+          "official_website": "https://first.global",
+          "verification_note": ""
+        },
+        {
+          "name": "MakeX Robotics Competition",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "6–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics, AI & innovation",
+          "official_website": "https://makex.cc",
+          "verification_note": ""
+        },
+        {
+          "name": "VEX IQ",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Elementary & Middle School",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Beginner robotics pathway",
+          "official_website": "https://vexrobotics.com",
+          "verification_note": ""
+        },
+        {
+          "name": "VEX V5 Robotics Competition",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Middle & High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Advanced engineering",
+          "official_website": "https://vexrobotics.com",
+          "verification_note": ""
+        },
+        {
+          "name": "VEX U",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "University robotics",
+          "official_website": "https://roboticseducation.org",
+          "verification_note": ""
+        },
+        {
+          "name": "RoboCup Junior",
+          "category": "Robotics & AI",
+          "level": "International",
+          "grades": "10–19 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Autonomous robotics & AI",
+          "official_website": "https://junior.robocup.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Technoxian World Robotics Championship",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Multi-domain robotics",
+          "official_website": "https://technoxian.com",
+          "verification_note": ""
+        },
+        {
+          "name": "BEST Robotics",
+          "category": "Robotics",
+          "level": "International (US-based)",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Engineering design",
+          "official_website": "https://bestinc.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Botball",
+          "category": "Robotics & AI",
+          "level": "International",
+          "grades": "Middle & High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Autonomous robotics programming",
+          "official_website": "https://kipr.org/botball",
+          "verification_note": ""
+        },
+        {
+          "name": "Junior Botball",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Elementary & Middle School",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Introductory autonomous robotics",
+          "official_website": "https://kipr.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Robofest",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "K–12",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Creative robotics challenges",
+          "official_website": "https://robofest.net",
+          "verification_note": ""
+        },
+        {
+          "name": "International Robot Olympiad (IRO)",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Under 8–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics & engineering",
+          "official_website": "https://iroc.org",
+          "verification_note": ""
+        },
+        {
+          "name": "National Robotics Challenge",
+          "category": "Robotics",
+          "level": "International (US-based)",
+          "grades": "School–College",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Practical robotics engineering",
+          "official_website": "https://nationalroboticschallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "FIRA RoboWorld Cup",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "AI & autonomous robotics",
+          "official_website": "https://firaworldcup.org",
+          "verification_note": ""
+        },
+        {
+          "name": "EARLY Robotics Competition",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Elementary",
+          "format": "Team",
+          "difficulty": "⭐",
+          "best_for": "Early robotics learning",
+          "official_website": "https://earlyrobotics.org",
+          "verification_note": ""
+        },
+        {
+          "name": "GEAR Robotics Competition",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "School",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Engineering fundamentals",
+          "official_website": "https://gearrobotics.org",
+          "verification_note": ""
+        },
+        {
+          "name": "RoboGames",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Open robotics competition",
+          "official_website": "https://robogames.net",
+          "verification_note": ""
+        },
+        {
+          "name": "RoboExpo Competition",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics exhibition & contests",
+          "official_website": "https://robo-expo.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Combat Robotics Events",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Combat robotics",
+          "official_website": "https://robotcombatevents.com",
+          "verification_note": ""
+        },
+        {
+          "name": "MATE ROV Competition",
+          "category": "Marine Robotics",
+          "level": "International",
+          "grades": "Middle School–University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Underwater robotics",
+          "official_website": "https://marinetech.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Autonomous Underwater Vehicle Competition",
+          "category": "Marine Robotics",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Autonomous underwater vehicles",
+          "official_website": "https://robonation.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Sea, Air and Land Challenge",
+          "category": "Robotics & Engineering",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Multi-domain engineering",
+          "official_website": "https://seaairland.psu.edu",
+          "verification_note": ""
+        },
+        {
+          "name": "Moon to Mars Ice & Prospecting Challenge*",
+          "category": "Robotics / Space",
+          "level": "International",
+          "grades": "High School–University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Space robotics concepts",
+          "official_website": "rascal.nianet.org (historical/legacy challenge)",
+          "verification_note": ""
+        },
+        {
+          "name": "Western Canadian Robot Games",
+          "category": "Robotics",
+          "level": "International",
+          "grades": "School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Robotics competitions",
+          "official_website": "https://robotgames.com",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🔬 Science & Research",
+      "slug": "-science-research",
+      "competitions": [
+        {
+          "name": "IRIS National Fair",
+          "category": "Science & Research",
+          "level": "National → International",
+          "grades": "Grades 8–12",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Scientific research projects",
+          "official_website": "https://www.irisnationalfair.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Regeneron International Science and Engineering Fair (ISEF)",
+          "category": "Science & Research",
+          "level": "International",
+          "grades": "Grades 9–12",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced scientific research",
+          "official_website": "https://www.societyforscience.org/isef",
+          "verification_note": ""
+        },
+        {
+          "name": "Genius Olympiad",
+          "category": "Science & Environment",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Environmental science & sustainability",
+          "official_website": "https://geniusolympiad.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Stockholm Junior Water Prize",
+          "category": "Environmental Science",
+          "level": "International",
+          "grades": "15–20 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Water research & sustainability",
+          "official_website": "https://www.siwi.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Conference of Young Scientists (ICYS)",
+          "category": "Science & Research",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Original scientific research",
+          "official_website": "https://www.icys.info",
+          "verification_note": ""
+        },
+        {
+          "name": "London International Youth Science Forum (LIYSF)",
+          "category": "Science",
+          "level": "International",
+          "grades": "16–21 Years",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Exposure to global science & research",
+          "official_website": "https://www.liysf.org.uk",
+          "verification_note": ""
+        },
+        {
+          "name": "National Children's Science Congress (NCSC)",
+          "category": "Science",
+          "level": "National",
+          "grades": "10–17 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Grassroots scientific research",
+          "official_website": "https://www.ncsc.co.in",
+          "verification_note": ""
+        },
+        {
+          "name": "INSPIRE MANAK Awards",
+          "category": "Science & Innovation",
+          "level": "National",
+          "grades": "Grades 6–10",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Innovation & scientific thinking",
+          "official_website": "https://www.inspireawards-dst.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Junior Science & Humanities Symposium (JSHS)",
+          "category": "Science",
+          "level": "International (US-based)",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "STEM research presentations",
+          "official_website": "https://www.jshs.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Thermo Fisher Scientific Junior Innovators Challenge",
+          "category": "Science",
+          "level": "International (US-based)",
+          "grades": "Middle School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Research & innovation",
+          "official_website": "https://www.societyforscience.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Broadcom MASTERS*",
+          "category": "Science",
+          "level": "International (Historical)",
+          "grades": "Middle School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "STEM research",
+          "official_website": "https://www.societyforscience.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Earth Science Olympiad (National Selection)",
+          "category": "Earth Science",
+          "level": "National → International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Earth sciences",
+          "official_website": "https://www.geosocindia.org",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "📚 Mathematics & Olympiads",
+      "slug": "-mathematics-olympiads",
+      "competitions": [
+        {
+          "name": "International Mathematical Olympiad (IMO)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced mathematics",
+          "official_website": "https://www.imo-official.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Indian Olympiad Qualifier in Mathematics (IOQM)",
+          "category": "Mathematics",
+          "level": "National",
+          "grades": "Grades 8–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "National Olympiad pathway",
+          "official_website": "https://www.mtai.org.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Indian National Mathematical Olympiad (INMO)",
+          "category": "Mathematics",
+          "level": "National",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced problem solving",
+          "official_website": "https://www.mtai.org.in",
+          "verification_note": ""
+        },
+        {
+          "name": "International Mathematics Competition (IMC)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "High School–University",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Higher mathematics",
+          "official_website": "https://www.imc-math.org.uk",
+          "verification_note": ""
+        },
+        {
+          "name": "American Mathematics Competitions (AMC 8/10/12)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Grades 6–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Mathematical reasoning",
+          "official_website": "https://maa.org",
+          "verification_note": ""
+        },
+        {
+          "name": "American Invitational Mathematics Examination (AIME)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Olympiad preparation",
+          "official_website": "https://maa.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Kangaroo Math Competition",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Grades 1–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Logical thinking",
+          "official_website": "https://www.mathkangaroo.org",
+          "verification_note": ""
+        },
+        {
+          "name": "SASMO (Singapore & Asian Schools Math Olympiad)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Grades 2–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Competitive mathematics",
+          "official_website": "https://sasmo.sg",
+          "verification_note": ""
+        },
+        {
+          "name": "SEAMO (Southeast Asian Mathematical Olympiad)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Grades 1–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Problem solving",
+          "official_website": "https://seamo-official.org",
+          "verification_note": ""
+        },
+        {
+          "name": "HKIMO (Hong Kong International Mathematical Olympiad)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Primary–High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "International mathematics",
+          "official_website": "https://hkimo.org",
+          "verification_note": ""
+        },
+        {
+          "name": "World Mathematics Invitational (WMI)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "International mathematics challenge",
+          "official_website": "https://wminv.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Youth Math Challenge (IYMC)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Students under 18",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Open mathematics competition",
+          "official_website": "https://iymc.info",
+          "verification_note": ""
+        },
+        {
+          "name": "Caribou Mathematics Competition",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Grades 3–12",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Mathematical thinking",
+          "official_website": "https://www.cariboutests.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Purple Comet! Math Meet",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "Middle & High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Collaborative problem solving",
+          "official_website": "https://purplecomet.org",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "💻 Coding & Computational Thinking",
+      "slug": "-coding-computational-thinking",
+      "competitions": [
+        {
+          "name": "Codeavour International",
+          "category": "Coding & Innovation",
+          "level": "International",
+          "grades": "7–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Beginners, AI & innovation projects",
+          "official_website": "https://codeavour.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Collegiate Programming Contest (ICPC)",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced algorithms & programming",
+          "official_website": "https://icpc.global",
+          "verification_note": ""
+        },
+        {
+          "name": "TCS CodeVita",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "College",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Programming & problem solving",
+          "official_website": "https://www.tcscodevita.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Meta Hacker Cup",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced competitive programming",
+          "official_website": "https://www.metahackercup.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Google Code Jam*",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Algorithmic programming (historical)",
+          "official_website": "https://codingcompetitions.withgoogle.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Google Kick Start*",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Competitive programming (historical)",
+          "official_website": "https://codingcompetitions.withgoogle.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Google Hash Code*",
+          "category": "Team Programming",
+          "level": "International",
+          "grades": "Students & Professionals",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Team-based programming (historical)",
+          "official_website": "https://codingcompetitions.withgoogle.com",
+          "verification_note": ""
+        },
+        {
+          "name": "USACO (USA Computing Olympiad)",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Algorithms & Olympiad preparation",
+          "official_website": "https://usaco.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Olympiad in Informatics (IOI)",
+          "category": "Informatics",
+          "level": "International",
+          "grades": "School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Elite programming pathway",
+          "official_website": "https://ioinformatics.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Indian Olympiad in Informatics (IOI Pathway)",
+          "category": "Informatics",
+          "level": "National → International",
+          "grades": "School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "National selection for IOI",
+          "official_website": "https://www.iarcs.org.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Bebras Challenge",
+          "category": "Computational Thinking",
+          "level": "International",
+          "grades": "Grades 3–12",
+          "format": "Individual",
+          "difficulty": "⭐",
+          "best_for": "Computational thinking",
+          "official_website": "https://www.bebras.org",
+          "verification_note": ""
+        },
+        {
+          "name": "ACSL (American Computer Science League)",
+          "category": "Computer Science",
+          "level": "International",
+          "grades": "School",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Programming fundamentals",
+          "official_website": "https://www.acsl.org",
+          "verification_note": ""
+        },
+        {
+          "name": "HackerRank Coding Contests",
+          "category": "Programming",
+          "level": "International",
+          "grades": "School–College",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Coding practice & competitions",
+          "official_website": "https://www.hackerrank.com",
+          "verification_note": ""
+        },
+        {
+          "name": "CodeChef Starters & Contests",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "School–College",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Competitive programming",
+          "official_website": "https://www.codechef.com",
+          "verification_note": ""
+        },
+        {
+          "name": "LeetCode Contests",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "School–Professional",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Interview-level programming",
+          "official_website": "https://leetcode.com",
+          "verification_note": ""
+        },
+        {
+          "name": "AtCoder Contests",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Algorithmic programming",
+          "official_website": "https://atcoder.jp",
+          "verification_note": ""
+        },
+        {
+          "name": "Codeforces Rounds",
+          "category": "Competitive Programming",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced algorithms",
+          "official_website": "https://codeforces.com",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🧠 Artificial Intelligence",
+      "slug": "-artificial-intelligence",
+      "competitions": [
+        {
+          "name": "International Olympiad in Artificial Intelligence (IOAI)",
+          "category": "Artificial Intelligence",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced AI & machine learning",
+          "official_website": "https://ioai-official.org",
+          "verification_note": ""
+        },
+        {
+          "name": "WAICY (World Artificial Intelligence Competition for Youth)",
+          "category": "Artificial Intelligence",
+          "level": "International",
+          "grades": "School Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "AI innovation & creativity",
+          "official_website": "https://www.waicy.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Codeavour AI Innovation Challenge",
+          "category": "AI & Innovation",
+          "level": "International",
+          "grades": "7–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "AI beginners & innovation",
+          "official_website": "https://codeavour.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Technovation Girls",
+          "category": "AI & Technology",
+          "level": "International",
+          "grades": "8–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "AI-powered social impact apps",
+          "official_website": "https://technovationchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Microsoft Imagine Cup",
+          "category": "AI & Innovation",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "AI product development",
+          "official_website": "https://imaginecup.microsoft.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Google Solution Challenge",
+          "category": "AI & Software",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "AI for Sustainable Development Goals",
+          "official_website": "https://developers.google.com/community/gdsc-solution-challenge",
+          "verification_note": ""
+        },
+        {
+          "name": "Kaggle Competitions",
+          "category": "AI & Data Science",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Machine learning & data science",
+          "official_website": "https://www.kaggle.com/competitions",
+          "verification_note": ""
+        },
+        {
+          "name": "AI for Good Innovation Competitions",
+          "category": "Artificial Intelligence",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Ethical AI & social impact",
+          "official_website": "https://aiforgood.itu.int",
+          "verification_note": ""
+        },
+        {
+          "name": "NVIDIA Student AI Competitions*",
+          "category": "Artificial Intelligence",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Deep learning & computer vision",
+          "official_website": "https://developer.nvidia.com/student-network",
+          "verification_note": ""
+        },
+        {
+          "name": "Intel AI Global Impact Festival*",
+          "category": "Artificial Intelligence",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "AI innovation & real-world impact",
+          "official_website": "https://aiglobalimpactfestival.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Indian National AI Olympiad (INAIO)",
+          "category": "Artificial Intelligence",
+          "level": "National → International",
+          "grades": "School Students (up to Class 12)",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "India's national pathway into IOAI",
+          "official_website": "https://india.acm.org/education/inaio",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "💡 Innovation & Design",
+      "slug": "-innovation-design",
+      "competitions": [
+        {
+          "name": "Conrad Challenge",
+          "category": "Innovation",
+          "level": "International",
+          "grades": "13–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Innovation, product design & entrepreneurship",
+          "official_website": "https://www.conradchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Samsung Solve for Tomorrow",
+          "category": "Innovation",
+          "level": "National / International*",
+          "grades": "School Students",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Social innovation & technology",
+          "official_website": "https://www.samsung.com/solvefortomorrow",
+          "verification_note": ""
+        },
+        {
+          "name": "Inspire Awards – MANAK",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "Grades 6–10",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Grassroots innovation & scientific thinking",
+          "official_website": "https://www.inspireawards-dst.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "James Dyson Award",
+          "category": "Product Design",
+          "level": "International",
+          "grades": "University & Recent Graduates",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Engineering & product innovation",
+          "official_website": "https://www.jamesdysonaward.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Red Bull Basement",
+          "category": "Innovation",
+          "level": "International",
+          "grades": "University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Technology-driven innovation",
+          "official_website": "https://www.redbull.com/basement",
+          "verification_note": ""
+        },
+        {
+          "name": "iGEM (International Genetically Engineered Machine Competition)",
+          "category": "Synthetic Biology & Innovation",
+          "level": "International",
+          "grades": "High School / University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Biotechnology & synthetic biology innovation",
+          "official_website": "https://igem.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Earth Prize",
+          "category": "Sustainability & Innovation",
+          "level": "International",
+          "grades": "13–19 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Climate innovation",
+          "official_website": "https://earthprize.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Young Inventors Prize*",
+          "category": "Innovation",
+          "level": "International",
+          "grades": "Students / Young Innovators",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Inventive thinking & problem solving",
+          "official_website": "https://www.epo.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Global Innovation Challenge (Various Editions)",
+          "category": "Innovation",
+          "level": "International",
+          "grades": "School–University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Creative problem solving",
+          "official_website": null,
+          "verification_note": "Official website requires manual verification."
+        },
+        {
+          "name": "Design For Change India – I CAN School Challenge",
+          "category": "Design Thinking & Social Innovation",
+          "level": "National → International",
+          "grades": "School Students",
+          "format": "Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Real-world problem solving through design thinking",
+          "official_website": "https://designforchangeindia.com",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "💼 Entrepreneurship",
+      "slug": "-entrepreneurship",
+      "competitions": [
+        {
+          "name": "Technovation Girls",
+          "category": "Entrepreneurship & Technology",
+          "level": "International",
+          "grades": "8–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Technology entrepreneurship & social impact",
+          "official_website": "https://technovationchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Diamond Challenge",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Startup creation & business strategy",
+          "official_website": "https://diamondchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Conrad Challenge",
+          "category": "Innovation & Entrepreneurship",
+          "level": "International",
+          "grades": "13–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Innovation commercialization",
+          "official_website": "https://www.conradchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Blue Ocean Student Entrepreneur Competition",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Startup ideas & entrepreneurship",
+          "official_website": "https://blueoceancompetition.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Microsoft Imagine Cup",
+          "category": "Technology Entrepreneurship",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Technology startups & innovation",
+          "official_website": "https://imaginecup.microsoft.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Hult Prize",
+          "category": "Social Entrepreneurship",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Social innovation & entrepreneurship",
+          "official_website": "https://www.hultprize.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Young Tycoons Business Challenge",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "School Students",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Business planning & pitching",
+          "official_website": "https://youngtycoons.com",
+          "verification_note": ""
+        },
+        {
+          "name": "NFTE World Series of Innovation",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "13–24 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Innovation & entrepreneurial thinking",
+          "official_website": "https://innovation.nfte.com",
+          "verification_note": ""
+        },
+        {
+          "name": "TiE Young Entrepreneurs (TYE)",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Startup ecosystem & mentoring",
+          "official_website": "https://tie.org/programs/tie-young-entrepreneurs",
+          "verification_note": ""
+        },
+        {
+          "name": "Smart India Hackathon (Software & Hardware Editions)",
+          "category": "Innovation & Entrepreneurship",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Problem-solving, innovation & product development",
+          "official_website": "https://www.sih.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Atal Tinkering Marathon",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "School Students",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Prototype development & innovation",
+          "official_website": "https://aim.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Youth Ideathon",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "School Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Student innovation & startup ideas",
+          "official_website": "https://www.youthideathon.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Wadhwani Ignite",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "School & College",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Entrepreneurial mindset & venture creation",
+          "official_website": "https://wadhwanifoundation.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Startup India School Innovation Programme (SISIP)",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "School Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Innovation & startup exposure",
+          "official_website": "https://www.startupindia.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Junior Achievement Company Program",
+          "category": "Entrepreneurship",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Business creation & financial literacy",
+          "official_website": "https://ja.org",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🚀 Space & Astronomy",
+      "slug": "-space-astronomy",
+      "competitions": [
+        {
+          "name": "ISRO Young Scientist Programme (YUVIKA)",
+          "category": "Space Education",
+          "level": "National",
+          "grades": "Class 9",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Introduction to space science",
+          "official_website": "https://jigyasa.iirs.gov.in/yuvika",
+          "verification_note": ""
+        },
+        {
+          "name": "IN-SPACe CanSat India Competition",
+          "category": "Space Engineering",
+          "level": "National",
+          "grades": "School & College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Satellite systems & aerospace engineering",
+          "official_website": "https://www.inspace.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "IN-SPACe Model Rocketry Challenge",
+          "category": "Aerospace",
+          "level": "National",
+          "grades": "School & College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Rocket design & propulsion",
+          "official_website": "https://www.inspace.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "ISRO Robotics Challenge (IRoC-U)",
+          "category": "Robotics & Space",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Space robotics & autonomous systems",
+          "official_website": "https://www.isro.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Bharatiya Antariksh Hackathon",
+          "category": "Space Innovation",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Space technology & software",
+          "official_website": "https://www.isro.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA Human Exploration Rover Challenge",
+          "category": "Space Engineering",
+          "level": "International",
+          "grades": "High School & University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Rover design & engineering",
+          "official_website": "https://www.nasa.gov",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA App Development Challenge",
+          "category": "Space Software",
+          "level": "International",
+          "grades": "School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Space app development",
+          "official_website": "https://www.nasa.gov",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA Space Apps Challenge",
+          "category": "Space Innovation",
+          "level": "International",
+          "grades": "Open",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Open innovation using NASA data",
+          "official_website": "https://www.spaceappschallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA Student Launch",
+          "category": "Aerospace",
+          "level": "International",
+          "grades": "High School & University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Rocket engineering",
+          "official_website": "https://www.nasa.gov",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA Lunabotics Challenge",
+          "category": "Space Robotics",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Lunar robotics & excavation",
+          "official_website": "https://www.nasa.gov",
+          "verification_note": ""
+        },
+        {
+          "name": "Conrad Challenge (Aerospace & Aviation Category)",
+          "category": "Space Innovation",
+          "level": "International",
+          "grades": "13–18 Years",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Aerospace innovation",
+          "official_website": "https://www.conradchallenge.org",
+          "verification_note": ""
+        },
+        {
+          "name": "International Astronomy & Astrophysics Competition (IAAC)",
+          "category": "Astronomy",
+          "level": "International",
+          "grades": "School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Astronomy & astrophysics",
+          "official_website": "https://iaac.space",
+          "verification_note": ""
+        },
+        {
+          "name": "International Olympiad on Astronomy & Astrophysics (IOAA)",
+          "category": "Astronomy",
+          "level": "International",
+          "grades": "High School",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Elite astronomy pathway",
+          "official_website": "https://ioaastrophysics.org",
+          "verification_note": ""
+        },
+        {
+          "name": "CanSat Competition (Various International Editions)",
+          "category": "Aerospace",
+          "level": "International",
+          "grades": "School & University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Satellite design & systems engineering",
+          "official_website": "https://cansatcompetition.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Space Settlement Design Competition",
+          "category": "Aerospace Engineering",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Space habitats & engineering design",
+          "official_website": "https://spacesettlementcontest.org",
+          "verification_note": ""
+        },
+        {
+          "name": "European CanSat Competition (ESA)",
+          "category": "Space Engineering",
+          "level": "International",
+          "grades": "High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Satellite mission design",
+          "official_website": "https://www.esa.int",
+          "verification_note": ""
+        },
+        {
+          "name": "NASA TechRise Student Challenge",
+          "category": "Space Engineering",
+          "level": "International",
+          "grades": "Middle & High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Flight experiments",
+          "official_website": "https://www.nasa.gov",
+          "verification_note": ""
+        },
+        {
+          "name": "Genes in Space",
+          "category": "Space Biology",
+          "level": "International",
+          "grades": "Grades 7–12",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Space biology research",
+          "official_website": "https://www.genesinspace.org",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🛸 Drones & Autonomous Systems",
+      "slug": "-drones-autonomous-systems",
+      "competitions": [
+        {
+          "name": "Drone Olympiad (India)",
+          "category": "Drone Technology",
+          "level": "National",
+          "grades": "School & College",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Drone piloting & innovation",
+          "official_website": null,
+          "verification_note": "Official website requires manual verification."
+        },
+        {
+          "name": "SAE Aero Design",
+          "category": "Aerospace & UAV",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Aircraft & UAV engineering",
+          "official_website": "https://www.saeaerodesign.com",
+          "verification_note": ""
+        },
+        {
+          "name": "SUAS – Student Unmanned Aerial Systems Competition",
+          "category": "Autonomous Systems",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Autonomous UAV missions",
+          "official_website": "https://suas-competition.org",
+          "verification_note": ""
+        },
+        {
+          "name": "AUVSI SUAS",
+          "category": "Autonomous Systems",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "AI, vision & autonomous drones",
+          "official_website": "https://www.auvsi.org",
+          "verification_note": ""
+        },
+        {
+          "name": "IARC Mission Challenges",
+          "category": "Autonomous Robotics",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced autonomous flight",
+          "official_website": "https://www.aerialroboticscompetition.org",
+          "verification_note": ""
+        },
+        {
+          "name": "FAI World Drone Racing Championship",
+          "category": "Drone Racing",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Competitive drone racing",
+          "official_website": "https://www.fai.org",
+          "verification_note": ""
+        },
+        {
+          "name": "MultiGP Drone Racing",
+          "category": "Drone Racing",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "FPV drone racing",
+          "official_website": "https://www.multigp.com",
+          "verification_note": ""
+        },
+        {
+          "name": "WorldSkills – Drone Technology",
+          "category": "Drone Technology",
+          "level": "International",
+          "grades": "Youth",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Professional drone skills",
+          "official_website": "https://worldskills.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Drone Federation of India Challenges*",
+          "category": "Drone Innovation",
+          "level": "National",
+          "grades": "School–College",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Drone innovation & applications",
+          "official_website": "https://www.dronefed.org",
+          "verification_note": ""
+        },
+        {
+          "name": "SAEINDIA AeroTHON",
+          "category": "UAV / Aerospace Engineering",
+          "level": "National",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Uncrewed aircraft system design, build & fly",
+          "official_website": "https://saeindia.org/aerothon2026",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🎮 Game Development & Interactive Technology",
+      "slug": "-game-development-interactive-technology",
+      "competitions": [
+        {
+          "name": "Global Game Jam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "16+ / University / Open",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Collaborative game development",
+          "official_website": "https://globalgamejam.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Brackeys Game Jam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐",
+          "best_for": "Unity game development",
+          "official_website": "https://itch.io",
+          "verification_note": ""
+        },
+        {
+          "name": "Ludum Dare",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Rapid game development",
+          "official_website": "https://ldjam.com",
+          "verification_note": ""
+        },
+        {
+          "name": "GMTK Game Jam (Game Maker's Toolkit)",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Game mechanics & design",
+          "official_website": "https://itch.io",
+          "verification_note": ""
+        },
+        {
+          "name": "Epic MegaJam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Unreal Engine game development",
+          "official_website": "https://unrealengine.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Godot Wild Jam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Godot game development",
+          "official_website": "https://itch.io",
+          "verification_note": ""
+        },
+        {
+          "name": "Buildbox Game Jam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual",
+          "difficulty": "⭐",
+          "best_for": "No-code game development",
+          "official_website": "https://buildbox.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Pirate Software Game Jam",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Indie game development",
+          "official_website": "https://itch.io",
+          "verification_note": ""
+        },
+        {
+          "name": "Games for Change Student Challenge",
+          "category": "Serious Games",
+          "level": "International",
+          "grades": "Middle & High School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Educational & social impact games",
+          "official_website": "https://gamesforchange.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Roblox Student Challenges",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐",
+          "best_for": "Roblox game creation",
+          "official_website": "https://create.roblox.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Minecraft Education Build Challenge",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "School Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐",
+          "best_for": "Creative world building",
+          "official_website": "https://education.minecraft.net",
+          "verification_note": ""
+        },
+        {
+          "name": "Unity Student Challenges",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Unity development & C#",
+          "official_website": "https://unity.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Unreal Engine Student Challenges",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Students",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Unreal Engine & 3D development",
+          "official_website": "https://unrealengine.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Ubisoft Game Lab Competition",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "University",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "AAA game design",
+          "official_website": "https://gamelabcompetition.com",
+          "verification_note": ""
+        },
+        {
+          "name": "IGDA Student Game Showcase",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Student game portfolio",
+          "official_website": "https://igda.org",
+          "verification_note": ""
+        },
+        {
+          "name": "IndieCade Student Competition",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "High School & University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Independent game development",
+          "official_website": "https://indiecade.com",
+          "verification_note": ""
+        },
+        {
+          "name": "DreamHack Game Development Competitions*",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "Open",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Game creation & esports innovation",
+          "official_website": "https://dreamhack.com",
+          "verification_note": ""
+        },
+        {
+          "name": "Student Game Showcase (IGF)*",
+          "category": "Game Development",
+          "level": "International",
+          "grades": "University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Independent game development",
+          "official_website": "https://igf.com",
+          "verification_note": ""
+        }
+      ]
+    },
+    {
+      "title": "🎓 National & Academic Competitions",
+      "slug": "-national-academic-competitions",
+      "competitions": [
+        {
+          "name": "Smart India Hackathon (SIH)",
+          "category": "Innovation & Hackathon",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Software & hardware innovation",
+          "official_website": "https://sih.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Toycathon",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "School & College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Toy design & gamification",
+          "official_website": "https://aicte-india.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Kavach Hackathon",
+          "category": "Cybersecurity",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Cybersecurity & digital defence",
+          "official_website": "https://innovationcell.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Smart India Internal Hackathon",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Product development",
+          "official_website": "https://innovationcell.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Atal Tinkering Marathon",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Student innovation",
+          "official_website": "https://aim.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "ATL Marathon",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "School",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Problem solving & prototyping",
+          "official_website": "https://aim.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "INSPIRE Awards – MANAK",
+          "category": "Science & Innovation",
+          "level": "National",
+          "grades": "Grades 6–10",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Scientific innovation",
+          "official_website": "https://inspireawards-dst.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Startup India School Innovation Programme (SISIP)",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "School",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Startup ecosystem",
+          "official_website": "https://startupindia.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Youth Ideathon",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "School",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Business ideas & innovation",
+          "official_website": "https://youthideathon.in",
+          "verification_note": ""
+        },
+        {
+          "name": "AICTE Vishwakarma Awards",
+          "category": "Engineering",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Engineering solutions",
+          "official_website": "https://aicte-india.org",
+          "verification_note": ""
+        },
+        {
+          "name": "AICTE IDE Bootcamp Challenges",
+          "category": "Innovation",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Product innovation",
+          "official_website": "https://aicte-india.org",
+          "verification_note": ""
+        },
+        {
+          "name": "YUVIKA (Young Scientist Programme)",
+          "category": "Space",
+          "level": "National",
+          "grades": "Class 9",
+          "format": "Individual",
+          "difficulty": "⭐⭐",
+          "best_for": "Space education",
+          "official_website": "https://jigyasa.iirs.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "Bharatiya Antariksh Hackathon",
+          "category": "Space Technology",
+          "level": "National",
+          "grades": "College",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Space innovation",
+          "official_website": "https://isro.gov.in",
+          "verification_note": ""
+        },
+        {
+          "name": "World Scholar's Cup",
+          "category": "Academic Enrichment",
+          "level": "International",
+          "grades": "School Students",
+          "format": "Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Academic debate & multi-subject learning",
+          "official_website": "https://scholarscup.org",
+          "verification_note": ""
+        },
+        {
+          "name": "MU20 School of Opportunity",
+          "category": "Model UN",
+          "level": "National",
+          "grades": "High School",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Model UN & leadership",
+          "official_website": "https://mu20.co",
+          "verification_note": ""
+        },
+        {
+          "name": "Model United Nations (UN Official Programme)",
+          "category": "Diplomacy",
+          "level": "International",
+          "grades": "School & University",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐",
+          "best_for": "Global affairs & diplomacy",
+          "official_website": "https://un.org/en/mun",
+          "verification_note": ""
+        }
+      ]
+    }
+  ]
+}
