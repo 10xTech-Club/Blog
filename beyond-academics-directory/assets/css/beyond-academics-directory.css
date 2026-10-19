@@ -1211,13 +1211,6 @@
     font-weight: 600;
 }
 
-.beyond-academics-cta .beyond-academics-cta-button {
-    margin-top: 10px;
-    min-height: 50px;
-    padding: 12px 30px;
-    font-size: 1.05rem;
-}
-
 @media (max-width: 760px) {
     .beyond-academics-cta {
         padding: 24px 18px;
@@ -1227,9 +1220,6 @@
         font-size: 1.5rem;
     }
 
-    .beyond-academics-cta .beyond-academics-cta-button {
-        width: 100%;
-    }
 }
 
 /* Compact suggestion form */
@@ -1299,4 +1289,16 @@
     .beyond-academics-suggest {
         padding: 14px 12px;
     }
+}
+
+.beyond-academics-cta-copy a {
+    color: var(--beyond-academics-accent-strong);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.beyond-academics-cta-copy a:hover,
+.beyond-academics-cta-copy a:focus-visible {
+    color: var(--beyond-academics-accent);
 }
