@@ -1,3 +1,13 @@
+// Assets (data, images, PDF) are found relative to this script, so the page also works when embedded on another site.
+const assetBase = (() => {
+  const script = document.currentScript;
+  try {
+    return new URL('./beyond-academics-directory/', script && script.src ? script.src : document.baseURI).href;
+  } catch (error) {
+    return './beyond-academics-directory/';
+  }
+})();
+
 const root = document.getElementById('beyond-academics-directory');
 if (root) root.replaceChildren();
 
@@ -127,7 +137,7 @@ function renderSpotlight(categories) {
     const pins = config.hotspots.map((spot, index) => `<button type="button" class="beyond-academics-hotspot" data-hotspot="${index}" style="--x:${spot.x}%;--y:${spot.y}%" aria-label="${escapeHtml(spot.title)}" aria-pressed="false"><span></span></button>`).join('');
     const items = config.hotspots.map((spot, index) => `<li data-hotspot-panel="${index}"><strong>${escapeHtml(spot.title)}</strong><span>${escapeHtml(spot.text)}</span></li>`).join('');
     return `<section class="beyond-academics-spotlight${config.reversed ? ' is-reversed' : ''}" id="${config.id}">
-      <div class="beyond-academics-spotlight-media"><div class="beyond-academics-spotlight-photo" data-tilt><img src="./beyond-academics-directory/assets/images/${config.image}" alt="${escapeHtml(config.alt)}" width="${config.width}" height="${config.height}" loading="lazy" decoding="async" />${pins}</div><p class="beyond-academics-spotlight-hint">${escapeHtml(config.hint)}</p></div>
+      <div class="beyond-academics-spotlight-media"><div class="beyond-academics-spotlight-photo" data-tilt><img src="${assetBase}assets/images/${config.image}" alt="${escapeHtml(config.alt)}" width="${config.width}" height="${config.height}" loading="lazy" decoding="async" />${pins}</div><p class="beyond-academics-spotlight-hint">${escapeHtml(config.hint)}</p></div>
       <div class="beyond-academics-spotlight-copy"><p class="beyond-academics-kicker">Spotlight</p><h2>${escapeHtml(config.title)}</h2><p>${escapeHtml(config.intro)}</p><ul class="beyond-academics-hotspot-list">${items}</ul></div>
     </section>`;
   }).join('\n\n    ');
@@ -220,12 +230,36 @@ function setupSuggestForm() {
   const form = document.querySelector('.beyond-academics-suggest-form');
   if (!form) return;
   const notice = form.parentNode.querySelector('.beyond-academics-form-notice');
+  const endpoint = (window.BeyondAcademicsConfig && window.BeyondAcademicsConfig.suggestEndpoint) || '';
+  const show = (kind, message) => {
+    notice.hidden = false;
+    notice.className = `beyond-academics-form-notice is-${kind}`;
+    notice.textContent = message;
+  };
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    notice.hidden = false;
-    notice.className = 'beyond-academics-form-notice is-success';
-    notice.textContent = 'Preview only: this local preview is not connected to a server, so nothing was sent. On the live WordPress site, suggestions are saved and emailed to the site team.';
-    form.reset();
+    if (!endpoint) {
+      show('success', 'Preview only: this page is not connected to a server, so nothing was sent.');
+      form.reset();
+      return;
+    }
+    const data = new FormData(form);
+    if (data.get('ba_hp')) {
+      show('success', 'Thank you! We have received your suggestion and will review it.');
+      form.reset();
+      return;
+    }
+    const button = form.querySelector('button[type="submit"]');
+    button.disabled = true;
+    data.set('_subject', `New competition suggestion: ${data.get('ba_name') || ''}`);
+    fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+      .then((response) => {
+        if (!response.ok) throw new Error('Request failed');
+        show('success', 'Thank you! We have received your suggestion and will review it.');
+        form.reset();
+      })
+      .catch(() => show('error', 'Something went wrong while sending your suggestion. Please try again.'))
+      .then(() => { button.disabled = false; });
   });
 }
 
@@ -397,8 +431,14 @@ function officialLinks(websites) {
   return websites.map((website) => `<a href="${escapeHtml(website)}" target="_blank" rel="noopener noreferrer">Official site</a>`).join('<br>');
 }
 
+// Level badges: colour follows the scope (national, international, national to international).
+function levelBadges(levels) {
+  if (!levels.length) return '<span class="beyond-academics-link-placeholder">Not listed in source</span>';
+  return levels.map((level) => `<span class="beyond-academics-level beyond-academics-level-${scopeFor(level)}">${escapeHtml(level)}</span>`).join(' ');
+}
+
 function renderMasterRow(entry) {
-  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${labels(entry.levels)}</td><td data-label="Age">${labels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.bestFor)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
+  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age">${labels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.bestFor)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
 }
 
 function renderCategory(category) {
@@ -506,6 +546,7 @@ function buildHandbook(data) {
         <p class="beyond-academics-intro">A parent's guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p>
         <a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a>
       </div>
+      <figure class="beyond-academics-hero-figure"><img src="${assetBase}assets/images/hero-robot.png" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /></figure>
     </header>
 
     <details class="beyond-academics-toc" id="handbook-directory" open>
@@ -586,7 +627,7 @@ function buildHandbook(data) {
       <p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p>
     </section>
 
-    <section class="beyond-academics-download" id="download-directory"><span class="beyond-academics-download-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h20l10 10v38H18zM38 8v10h10M32 28v14M26 36l6 6 6-6"/></svg></span><div class="beyond-academics-download-copy"><p class="beyond-academics-kicker">Free download</p><h2>Take the Directory With You</h2><p>Download a printable PDF of this categorized list of national and international competitions, with levels, ages, formats, difficulty, and official websites for each one.</p><p class="beyond-academics-download-meta">PDF · 13 pages · about 145 KB</p></div><a class="beyond-academics-primary-button beyond-academics-download-button" href="./beyond-academics-directory/assets/downloads/STEM-Competition-Directory.pdf" download="STEM-Competition-Directory.pdf">Download PDF</a></section>
+    <section class="beyond-academics-download" id="download-directory"><span class="beyond-academics-download-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h20l10 10v38H18zM38 8v10h10M32 28v14M26 36l6 6 6-6"/></svg></span><div class="beyond-academics-download-copy"><p class="beyond-academics-kicker">Free download</p><h2>Take the Directory With You</h2><p>Download a printable PDF of this categorized list of national and international competitions, with levels, ages, formats, difficulty, and official websites for each one.</p><p class="beyond-academics-download-meta">PDF · 13 pages · about 145 KB</p></div><a class="beyond-academics-primary-button beyond-academics-download-button" href="${assetBase}assets/downloads/STEM-Competition-Directory.pdf" download="STEM-Competition-Directory.pdf">Download PDF</a></section>
 
     <section class="beyond-academics-editorial beyond-academics-success" id="how-to-succeed">
       <p class="beyond-academics-kicker">Prepare thoughtfully</p><h2>How to Actually Succeed</h2><p>Discovering the right competition is only step one. Here's what separates students who thrive from students who just participate.</p>
@@ -673,7 +714,7 @@ const suppliedData = window.BeyondAcademicsDirectoryData;
 if (suppliedData && Array.isArray(suppliedData.categories)) {
   buildHandbook(suppliedData);
 } else {
-  fetch('./beyond-academics-directory/data/competitions.json')
+  fetch(assetBase + 'data/competitions.json')
     .then((response) => {
       if (!response.ok) throw new Error('Could not load handbook competition data.');
       return response.json();

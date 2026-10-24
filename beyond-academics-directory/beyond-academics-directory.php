@@ -511,6 +511,8 @@ function beyond_academics_directory_age_groups($label) {
     return $groups;
 }
 
+
+
 function beyond_academics_directory_register_suggestion_type() {
     register_post_type('ba_suggestion', array(
         'labels' => array(
@@ -667,6 +669,17 @@ function beyond_academics_directory_cta_html() {
     return '<section class="beyond-academics-cta" id="next-step"><span class="beyond-academics-cta-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M32 7c9 6 13 17 10 30H22C19 24 23 13 32 7zM22 37l-9 9 9-2M42 37l9 9-9-2M28 45l4 11 4-11"/><circle cx="32" cy="25" r="4.5"/></svg></span><div class="beyond-academics-cta-copy"><h2>Give Your Child the Preparation to Compete</h2><p>Discovering a competition is exciting—but turning that ambition into a working project takes preparation, practice, and the right guidance.</p><p>Through our <strong>Premier Accelerator Program (PAP)</strong> for students aged 12–17, 10xTechClub helps learners progress from technology concepts to building projects, experimenting with ideas, and tackling practical challenges. With exposure to Robotics, AI, Python, IoT, and Embedded Systems, alongside mentor guidance and soft skills development, students can build relevant experience for robotics competitions, coding challenges, hackathons, and innovation programs.</p><p>Rather than preparing only for a single event, students develop skills they can apply across multiple challenges—learning to build, test, improve, and present their ideas with confidence.</p><p><strong>Help your child take the next step from aspiring competitor to confident creator.</strong></p><p><a href="https://10xtechclub.com/" target="_blank" rel="noopener noreferrer">Visit 10xTechClub</a></p></div></section>';
 }
 
+function beyond_academics_directory_level_badges($levels) {
+    if (empty($levels)) {
+        return '<span class="beyond-academics-link-placeholder">Not listed in source</span>';
+    }
+    $html = array();
+    foreach ($levels as $level) {
+        $html[] = '<span class="beyond-academics-level beyond-academics-level-' . beyond_academics_directory_scope($level) . '">' . esc_html($level) . '</span>';
+    }
+    return implode(' ', $html);
+}
+
 function beyond_academics_directory_shortcode() {
     $categories = beyond_academics_directory_parse_markdown();
     if (empty($categories)) {
@@ -767,11 +780,11 @@ function beyond_academics_directory_shortcode() {
             $official_links = '<span class="beyond-academics-link-placeholder">Not listed in source</span>';
         }
 
-        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . $cell($levels) . '</td><td data-label="Age">' . $cell($grades) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
+        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . beyond_academics_directory_level_badges($levels) . '</td><td data-label="Age">' . $cell($grades) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
     }
 
     $page_html = '<div class="beyond-academics-directory" id="top">';
-    $page_html .= '<header class="beyond-academics-hero"><div class="beyond-academics-hero-copy"><p class="beyond-academics-kicker">10xTechClub · Parent and student handbook</p><h1>Beyond Academics</h1><p class="beyond-academics-subtitle">A Categorized list of National and International Competitions</p><p class="beyond-academics-intro">A Parent\'s Guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p><a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a></div>'</header>';
+    $page_html .= '<header class="beyond-academics-hero"><div class="beyond-academics-hero-copy"><p class="beyond-academics-kicker">10xTechClub · Parent and student handbook</p><h1>Beyond Academics</h1><p class="beyond-academics-subtitle">A Categorized list of National and International Competitions</p><p class="beyond-academics-intro">A Parent\'s Guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p><a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a></div><figure class="beyond-academics-hero-figure"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/images/hero-robot.png') . '" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /></figure></header>'
     $page_html .= '<details class="beyond-academics-toc" id="handbook-directory" open><summary><span><small>CONTENTS</small>Handbook directory</span><span class="beyond-academics-toc-toggle" aria-hidden="true">+</span></summary><ol class="beyond-academics-toc-list"><li><a href="#introduction">Why this handbook exists</a></li><li><a href="#stem-journey">The Four Stages of a STEM Journey</a></li><li><a href="#domain-gallery">STEM Competition Domains at a Glance</a></li><li><a href="#competition-categories">Competition Categories</a><ul class="beyond-academics-toc-sub">' . $category_toc . '</ul></li><li><a href="#finding-the-right-fit">Finding the Right Fit</a></li><li><a href="#master-directory">Master Competition Directory <span>' . count($unique_entries) . ' unique competitions</span></a></li><li><a href="#how-to-succeed">How to Actually Succeed</a></li><li><a href="#designing-the-journey">Designing the Journey, Not Just Entering Events</a></li><li><a href="#student-letter">A Letter to Students</a></li></ol></details>';
 
     $page_html .= '<section class="beyond-academics-intro-section" id="introduction"><p class="beyond-academics-kicker">Dear Parent</p><h2>Why this handbook exists</h2><p>For decades, academic success has been measured by marks, ranks, and report cards. That still matters, but the world has quietly changed. Universities, employers, and innovators are now looking beyond grades, for curiosity, creativity, initiative, resilience, and the ability to solve real problems.</p><p>Those qualities aren\'t built by textbooks alone. They\'re built by robots that don\'t work the first time, by presenting ideas in front of judges, by writing code to solve real problems, by launching rockets and designing drones and pitching startup ideas.</p><p>Yet despite thousands of STEM competitions available across India and the world, most parents know only a handful, not because they aren\'t interested, but because information is scattered across hundreds of organisations, government initiatives, and private institutions.</p><p>That\'s what this guide is for: not to encourage your child to enter every competition, but to help you find the right ones based on their interests, strengths, and stage.</p><p>You don\'t need to read from beginning to end. Start with the contents, choose the category that matches your child\'s interest, compare a few options, and shortlist those that feel exciting and achievable. The goal isn\'t to enter the most competitions; it\'s to enter the right ones.</p></section>';
