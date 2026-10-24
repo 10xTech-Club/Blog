@@ -395,7 +395,7 @@ function renderControls(prefix, categories = [], grades = []) {
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-scope">Scope</label>
-        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="national">National</option><option value="progression">National to International</option><option value="international">International</option><option value="other">Other / not specified</option></select>
+        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="national">National</option><option value="progression">National to International</option><option value="international">International</option></select>
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-format">Participation</label>
@@ -540,13 +540,13 @@ function buildHandbook(data) {
   root.innerHTML = `<div class="beyond-academics-directory" id="top">
     <header class="beyond-academics-hero">
       <div class="beyond-academics-hero-copy">
-        <p class="beyond-academics-kicker">10xTechClub · Parent and student handbook</p>
+        <p class="beyond-academics-kicker">10xTechClub · Student handbook</p>
         <h1>Beyond Academics</h1>
         <p class="beyond-academics-subtitle">A Categorized list of National and International Competitions</p>
-        <p class="beyond-academics-intro">A parent's guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p>
+        <p class="beyond-academics-intro">A student's guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p>
         <a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a>
       </div>
-      <figure class="beyond-academics-hero-figure"><img src="${assetBase}assets/images/hero-robot.png" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /></figure>
+      <figure class="beyond-academics-hero-figure"><img src="${assetBase}assets/images/hero-robot.png" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /><p style="text-align: center; margin-top: 8px; margin-bottom: 0; font-size: 0.95rem; font-weight: bold; font-style: italic; color: var(--beyond-academics-text);">For the Students of Age 6 to 20 & Above</p></figure>
     </header>
 
     <details class="beyond-academics-toc" id="handbook-directory" open>
@@ -565,16 +565,15 @@ function buildHandbook(data) {
     </details>
 
     <section class="beyond-academics-intro-section" id="introduction">
-      <p class="beyond-academics-kicker">Dear Parent</p>
       <h2>Why this handbook exists</h2>
-      <p>For decades, academic success has been measured by marks, ranks, and report cards. That still matters, but the world has quietly changed. Universities, employers, and innovators are now looking beyond grades, for curiosity, creativity, initiative, resilience, and the ability to solve real problems.</p>
-      <p>Those qualities aren't built by textbooks alone. They're built by robots that don't work the first time, by presenting ideas in front of judges, by writing code to solve real problems, by launching rockets and designing drones and pitching startup ideas.</p>
-      <p>Yet despite thousands of STEM competitions available across India and the world, most parents know only a handful, not because they aren't interested, but because information is scattered across hundreds of organisations, government initiatives, and private institutions.</p>
-      <p>That's what this guide is for: not to encourage your child to enter every competition, but to help you find the right ones based on their interests, strengths, and stage.</p>
-      <p>You don't need to read from beginning to end. Start with the contents, choose the category that matches your child's interest, compare a few options, and shortlist those that feel exciting and achievable. The goal isn't to enter the most competitions; it's to enter the right ones.</p>
+      <p>For decades, academic success has been measured by marks, ranks, and report cards. That still matters, but the world has changed. Universities, employers, and innovators are now looking beyond grades, valuing curiosity, creativity, initiative, resilience, and the ability to solve real problems.</p>
+      <p>These qualities aren't built by textbooks alone. They're built by robots that don't work the first time, by presenting your ideas in front of judges, by writing code to solve real problems, by launching rockets, designing drones, and pitching startup ideas.</p>
+      <p>Yet despite thousands of STEM competitions available across India and the world, discovering the right opportunities can be challenging. Information is scattered across hundreds of organisations, government initiatives, and private institutions, making it difficult to know where to begin.</p>
+      <p>That's what this guide is for: to help you discover competitions that match your interests, strengths, and current skill level. Whether you're passionate about robotics, curious about AI, excited by space exploration, or eager to turn your ideas into something real, this handbook helps you find opportunities to learn, experiment, and challenge yourself.</p>
+      <p>You don't need to read from beginning to end. Start with the contents, choose the category that matches your interests, compare a few options, and shortlist the ones that feel exciting and achievable. The goal isn't to enter the most competitions; it's to find the right ones for you.</p>
     </section>
 
-    <section class="beyond-academics-editorial beyond-academics-about" id="about-10xtechclub"><h2>What Is 10xTechClub?</h2><p>10xTechClub is a hands-on STEM learning and technology education centre in Pune, India, empowering students to explore emerging technologies, build real-world projects, and develop future-ready skills. Through experiential, project-based learning, students explore Robotics, Artificial Intelligence (AI), Coding, Electronics, Python, 3D Printing, IoT, SpaceTech, and other exciting fields of innovation.</p><p>At 10xTechClub, learning goes beyond textbooks. Students are encouraged to experiment, solve problems, collaborate, design prototypes, participate in hackathons, and turn their ideas into working projects. With structured learning pathways, mentor guidance, and opportunities to apply their knowledge, students develop critical thinking, creativity, teamwork, and an innovation-driven mindset.</p><p>We believe that every curious learner deserves opportunities to explore their potential beyond the classroom. That is why Beyond Academics: The Ultimate STEM Competition Handbook brings together a curated guide to STEM, robotics, science, AI, coding, engineering, space, and innovation competitions in India and around the world. Designed for students of age 6–19 years and above, parents, and educators, this resource helps readers discover opportunities, understand competition pathways, and explore ways to turn curiosity and practical skills into meaningful learning experiences.</p><p>Whether a student is taking their first steps into robotics or aspiring to participate in national and international innovation challenges, this handbook is a starting point for exploring what is possible beyond academics.</p></section>
+    <section class="beyond-academics-editorial beyond-academics-about" id="about-10xtechclub"><h2>What Is 10xTechClub?</h2><p>10xTechClub is a hands-on STEM learning and technology education centre in Pune, India, empowering students to explore emerging technologies, build real-world projects, and develop future-ready skills. Through experiential, project-based learning, students explore Robotics, Artificial Intelligence (AI), Coding, Electronics, Python, 3D Printing, IoT, SpaceTech, and other exciting fields of innovation.</p><p>At 10xTechClub, learning goes beyond textbooks. You are encouraged to experiment, solve problems, collaborate, design prototypes, participate in hackathons, and turn your ideas into working projects. With structured learning pathways, mentor guidance, and opportunities to apply your knowledge, you develop critical thinking, creativity, teamwork, and an innovation-driven mindset.</p><p>We believe that every curious learner deserves opportunities to explore their potential beyond the classroom. That is why <em>Beyond Academics: The Ultimate STEM Competition Handbook</em> brings together a curated guide to STEM, robotics, science, AI, coding, engineering, space, and innovation competitions in India and around the world. Designed for curious students aged 6–19 and above, this resource helps you discover exciting opportunities, understand competition pathways, and explore ways to turn your curiosity and practical skills into meaningful learning experiences.</p><p><strong>Whether you are taking your first steps into robotics or aspiring to participate in national and international innovation challenges, this handbook is your starting point for exploring what is possible beyond academics.</strong></p></section>
 
     <section class="beyond-academics-editorial beyond-academics-journey" id="stem-journey">
       <p class="beyond-academics-kicker">The STEM journey</p>
@@ -598,7 +597,7 @@ function buildHandbook(data) {
 
     <section class="beyond-academics-editorial beyond-academics-fit" id="finding-the-right-fit">
       <p class="beyond-academics-kicker">Choose with purpose</p><h2>Finding the Right Fit</h2>
-      <div class="beyond-academics-table-wrapper"><table class="beyond-academics-table"><caption>Use interests as a starting point for exploring directory domains</caption><thead><tr><th scope="col">If your child enjoys...</th><th scope="col">Look at...</th></tr></thead><tbody>
+      <div class="beyond-academics-table-wrapper"><table class="beyond-academics-table"><caption>Use interests as a starting point for exploring directory domains</caption><thead><tr><th scope="col">If the student enjoys...</th><th scope="col">Look at...</th></tr></thead><tbody>
         <tr><th scope="row">Building robots or machines</th><td>Robotics · Engineering · Drones</td></tr>
         <tr><th scope="row">Programming and creating software</th><td>Coding · Artificial Intelligence · Game Development</td></tr>
         <tr><th scope="row">Solving puzzles and logical problems</th><td>Mathematics Olympiads</td></tr>
@@ -623,11 +622,15 @@ function buildHandbook(data) {
       ${tableControls}
       <div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div>
       <p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p>
-      <div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table"><caption>Unique competitions and source-provided details</caption><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
+      <div style="display: flex; align-items: flex-start; gap: 16px; justify-content: space-between;">
+        <div id="master-content" class="beyond-academics-collapsible-content" style="flex: 1;"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table"><caption>Unique competitions and source-provided details</caption><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
       <p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p>
+        </div>
+        <button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory" style="flex-shrink: 0; margin-top: 4px;"><span aria-hidden="true">−</span></button>
+      </div>
     </section>
 
-    <section class="beyond-academics-download" id="download-directory"><span class="beyond-academics-download-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h20l10 10v38H18zM38 8v10h10M32 28v14M26 36l6 6 6-6"/></svg></span><div class="beyond-academics-download-copy"><p class="beyond-academics-kicker">Free download</p><h2>Take the Directory With You</h2><p>Download a printable PDF of this categorized list of national and international competitions, with levels, ages, formats, difficulty, and official websites for each one.</p><p class="beyond-academics-download-meta">PDF · 13 pages · about 145 KB</p></div><a class="beyond-academics-primary-button beyond-academics-download-button" href="${assetBase}assets/downloads/STEM-Competition-Directory.pdf" download="STEM-Competition-Directory.pdf">Download PDF</a></section>
+    <section class="beyond-academics-download" id="download-directory"><span class="beyond-academics-download-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h20l10 10v38H18zM38 8v10h10M32 28v14M26 36l6 6 6-6"/></svg></span><div class="beyond-academics-download-copy"><p class="beyond-academics-kicker">Free download</p><h2>Take the Directory With You</h2><p>Download a printable PDF of this categorized list of national and international competitions, with levels, ages, formats, difficulty, and official websites</p><p class="beyond-academics-download-meta">PDF · 13 pages · about 145 KB</p></div><a class="beyond-academics-primary-button beyond-academics-download-button" href="${assetBase}assets/downloads/STEM-Competition-Directory.pdf" download="STEM-Competition-Directory.pdf">Download PDF</a></section>
 
     <section class="beyond-academics-editorial beyond-academics-success" id="how-to-succeed">
       <p class="beyond-academics-kicker">Prepare thoughtfully</p><h2>How to Actually Succeed</h2><p>Discovering the right competition is only step one. Here's what separates students who thrive from students who just participate.</p>
@@ -651,9 +654,9 @@ function buildHandbook(data) {
 
     <section class="beyond-academics-editorial beyond-academics-closing" id="designing-the-journey">
       <p class="beyond-academics-kicker">Keep learning beyond the event</p><h2>Designing the Journey, Not Just Entering Events</h2>
-      <p>Instead of asking which competition comes next, ask what your child hopes to achieve this year. One year might focus on learning robotics; the next might build on that with an AI-powered project. Progress comes from each experience building on the last, not from the number of events entered.</p>
-      <p>Setbacks are part of the process, and even strong teams lose. Treat a result as a lesson rather than a verdict: what worked, what did not, and what to try differently? A few honest lines in a “Lessons Learned” notebook after each event can do more for long-term growth than a trophy.</p>
-      <p>Measure success by the skills your child develops, not the certificates collected. Confidence, curiosity, resilience, and problem-solving last beyond any competition; the aim is to build the kind of thinking that lasts, not simply to chase medals.</p>
+      <p>Instead of asking which competition comes next, ask yourself what you hope to achieve this year. One year might focus on learning robotics; the next might build on that with an AI-powered project. Progress comes from building on each experience, not from the number of events you enter.</p>
+      <p>Setbacks are part of the process, and even strong teams lose. Treat a result as a lesson rather than a verdict: what worked, what did not, and what can you try differently? Writing a few honest lines in a “Lessons Learned” notebook after each event can do more for your long-term growth than a trophy.</p>
+      <p>Measure your success by the skills you develop, not the certificates you collect. Confidence, curiosity, resilience, and problem-solving last beyond any competition. The aim is to build the kind of thinking that lasts, not simply to chase medals.</p>
     </section>
 
     <section class="beyond-academics-editorial beyond-academics-student-letter" id="student-letter">
@@ -668,10 +671,11 @@ function buildHandbook(data) {
 
     <section class="beyond-academics-cta" id="next-step"><span class="beyond-academics-cta-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M32 7c9 6 13 17 10 30H22C19 24 23 13 32 7zM22 37l-9 9 9-2M42 37l9 9-9-2M28 45l4 11 4-11"/><circle cx="32" cy="25" r="4.5"/></svg></span><div class="beyond-academics-cta-copy"><h2>Give Your Child the Preparation to Compete</h2><p>Discovering a competition is exciting—but turning that ambition into a working project takes preparation, practice, and the right guidance.</p><p>Through our <strong>Premier Accelerator Program (PAP)</strong> for students aged 12–17, 10xTechClub helps learners progress from technology concepts to building projects, experimenting with ideas, and tackling practical challenges. With exposure to Robotics, AI, Python, IoT, and Embedded Systems, alongside mentor guidance and soft skills development, students can build relevant experience for robotics competitions, coding challenges, hackathons, and innovation programs.</p><p>Rather than preparing only for a single event, students develop skills they can apply across multiple challenges—learning to build, test, improve, and present their ideas with confidence.</p><p><strong>Help your child take the next step from aspiring competitor to confident creator.</strong></p><p><a href="https://10xtechclub.com/" target="_blank" rel="noopener noreferrer">Visit 10xTechClub</a></p></div></section>
 
-    <footer class="beyond-academics-disclaimer"><h2>Disclaimer</h2><p><em>Please note: This is a curated informational list of potential competition opportunities, not an endorsement by 10xTechClub. Competition details may change; always verify eligibility, dates, fees, and rules on the official competition website before participating.</em></p><p><a href="#handbook-directory">Back to handbook directory</a></p><a href="#top" class="beyond-academics-back-top" aria-label="Back to top">Back to top ↑</a></footer>
 
     ${renderSuggestForm(categories)}
+    <footer class="beyond-academics-disclaimer"><h2>Disclaimer</h2><p><em>Please note: This is a curated informational list of potential competition opportunities, not an endorsement by 10xTechClub. Competition details may change; always verify eligibility, dates, fees, and rules on the official competition website before participating.</em></p><p><a href="#handbook-directory">Back to handbook directory</a></p><a href="#top" class="beyond-academics-back-top" aria-label="Back to top">Back to top ↑</a></footer>
   </div>`;
+
 
   const items = uniqueEntries.map((entry, index) => {
     const item = { '@type': 'ListItem', position: index + 1, name: entry.name };
@@ -699,6 +703,20 @@ function buildHandbook(data) {
   setupSpotlight();
   setupTilt();
   setupSuggestForm();
+
+  // Setup master directory collapse/expand
+  const masterToggle = document.getElementById('master-toggle');
+  const masterContent = document.getElementById('master-content');
+  if (masterToggle && masterContent) {
+    masterToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      const isExpanded = masterToggle.getAttribute('aria-expanded') === 'true';
+      masterToggle.setAttribute('aria-expanded', !isExpanded);
+      masterContent.classList.toggle('is-collapsed');
+      masterToggle.textContent = isExpanded ? '+' : '−';
+    });
+  }
+
 
   root.addEventListener('click', (event) => {
     const domainLink = event.target.closest('[data-domain-filter]');

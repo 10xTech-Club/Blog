@@ -1494,3 +1494,127 @@
     border-radius: 18px;
     box-shadow: 0 14px 30px rgba(22, 25, 44, 0.16);
 }
+
+/* Master directory collapse button */
+.beyond-academics-collapse-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--beyond-academics-border);
+    background: #fff;
+    border-radius: 8px;
+    color: var(--beyond-academics-accent-strong);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.beyond-academics-collapse-toggle:hover {
+    background: var(--beyond-academics-bg);
+    border-color: var(--beyond-academics-accent-strong);
+}
+
+.beyond-academics-collapse-toggle:active {
+    transform: scale(0.95);
+}
+
+.beyond-academics-collapsible-content {
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 10000px;
+    opacity: 1;
+}
+
+.beyond-academics-collapsible-content.is-collapsed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Master directory collapse button */
+.beyond-academics-collapse-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--beyond-academics-border);
+    background: #fff;
+    border-radius: 8px;
+    color: var(--beyond-academics-accent-strong);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.beyond-academics-collapse-toggle:hover {
+    background: var(--beyond-academics-bg);
+    border-color: var(--beyond-academics-accent-strong);
+}
+
+.beyond-academics-collapse-toggle:active {
+    transform: scale(0.95);
+}
+
+.beyond-academics-collapsible-content {
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 10000px;
+    opacity: 1;
+}
+
+.beyond-academics-collapsible-content.is-collapsed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+/* Master directory collapse button */
+.beyond-academics-collapse-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid var(--beyond-academics-border);
+    background: #fff;
+    border-radius: 8px;
+    color: var(--beyond-academics-accent-strong);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.beyond-academics-collapse-toggle:hover {
+    background: var(--beyond-academics-bg);
+    border-color: var(--beyond-academics-accent-strong);
+}
+
+.beyond-academics-collapse-toggle:active {
+    transform: scale(0.95);
+}
+
+.beyond-academics-collapsible-content {
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    max-height: 10000px;
+    opacity: 1;
+}
+
+.beyond-academics-collapsible-content.is-collapsed {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+

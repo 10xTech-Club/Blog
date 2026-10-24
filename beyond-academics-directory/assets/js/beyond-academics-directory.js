@@ -195,6 +195,18 @@
     function initialize() {
         setupSpotlight();
         setupTilt();
+        // Setup master directory collapse/expand
+        const masterToggle = root.querySelector('#master-toggle');
+        const masterContent = root.querySelector('#master-content');
+        if (masterToggle && masterContent) {
+            masterToggle.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isExpanded = masterToggle.getAttribute('aria-expanded') === 'true';
+                masterToggle.setAttribute('aria-expanded', !isExpanded);
+                masterContent.classList.toggle('is-collapsed');
+                masterToggle.textContent = isExpanded ? '+' : '−';
+            });
+        }
         const uniqueCount = root.querySelectorAll('#master-directory tbody tr').length;
         setupFilters('master', '#master-directory tbody tr', uniqueCount);
 
