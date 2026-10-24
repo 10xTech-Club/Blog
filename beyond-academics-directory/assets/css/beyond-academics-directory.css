@@ -228,7 +228,7 @@
 .beyond-academics-intro-section,
 .beyond-academics-editorial,
 .beyond-academics-directory-block {
-    margin: 28px 0;
+    margin: 40px 0;
     padding: 24px 4px;
     border-top: 1px solid var(--beyond-academics-border);
 }
@@ -1525,7 +1525,7 @@
 
 .beyond-academics-collapsible-content {
     transition: opacity 0.3s ease, max-height 0.3s ease;
-    max-height: 10000px;
+    max-height: none;
     opacity: 1;
 }
 
@@ -1566,7 +1566,7 @@
 
 .beyond-academics-collapsible-content {
     transition: opacity 0.3s ease, max-height 0.3s ease;
-    max-height: 10000px;
+    max-height: none;
     opacity: 1;
 }
 
@@ -1607,7 +1607,7 @@
 
 .beyond-academics-collapsible-content {
     transition: opacity 0.3s ease, max-height 0.3s ease;
-    max-height: 10000px;
+    max-height: none;
     opacity: 1;
 }
 
@@ -1617,4 +1617,5 @@
     overflow: hidden;
     pointer-events: none;
 }
+
 
