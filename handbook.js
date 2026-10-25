@@ -640,7 +640,7 @@ function buildHandbook(data) {
       <p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p>
       <div class="beyond-academics-master-bar"><span class="beyond-academics-master-bar-title" id="master-table-title">Unique competitions and source-provided details</span><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory"><span aria-hidden="true">−</span></button></div>
       <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
-      <p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p>
+      <p class="beyond-academics-return beyond-academics-master-return"><a href="#handbook-directory">Back to handbook directory</a><a href="#master-directory">Back to filters</a></p>
       </div>
     </section>
 

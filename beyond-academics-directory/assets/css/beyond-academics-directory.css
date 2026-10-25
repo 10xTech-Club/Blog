@@ -1640,3 +1640,10 @@
     flex-shrink: 0;
     margin: 0;
 }
+
+.beyond-academics-master-return {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px;
+}
