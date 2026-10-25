@@ -323,10 +323,10 @@ function beyond_academics_directory_student_letter_html() {
 <section class="beyond-academics-editorial beyond-academics-student-letter" id="student-letter">
     <p class="beyond-academics-kicker">A closing note</p>
     <h2>A Letter to Students</h2>
-    <p>Dear student,</p>
-    <p>A student does not have to know everything before beginning. They can choose a question that sparks their curiosity, find a challenge that feels possible but not effortless, and take the first step. Their first idea may change when tested. That is not failure; that is how learning works.</p>
-    <p>A student should keep a record of what they try, what surprises them, and what they would change; ask teammates for their ideas; make sure everyone can explain the project; and remember that a clear explanation is often stronger than complicated words.</p>
-    <p>A student may win, or may not. Either way, the skills they practise, the problems they learn to solve, and the confidence they build belong to them. Students should keep making, keep asking questions, and let each challenge help them decide what to explore next.</p>
+    <p><em>Dear student,</em></p>
+    <p>You don’t have to know everything before you begin. Choose a question that sparks your curiosity, find a challenge that feels possible but not effortless, and take the first step. Your first idea may change when tested. That is not failure; that is how learning works.</p>
+    <p>Keep a record of what you try, what surprises you, and what you would change. Ask your teammates for their ideas, make sure everyone can explain the project, and remember that a clear explanation is often stronger than complicated words.</p>
+    <p>You may win, or you may not. Either way, the skills you practise, the problems you learn to solve, and the confidence you build belong to you. Keep creating, keep asking questions, and let each challenge help you decide what to explore next.</p>
     <p>With encouragement,<br><strong>10xTechClub Team</strong></p>
 </section>
 HTML;
@@ -445,10 +445,18 @@ function beyond_academics_directory_normalize_grade($value) {
 }
 
 function beyond_academics_directory_age_group_names() {
-    return array('Ages 5–18', 'Ages 14–18', 'Ages 18–24', 'Ages 6–24+', '13 Years & Above', 'Open to all');
+    return array(
+        'Primary / Elementary: Ages 5–10 (Grades KG–5)',
+        'Upper Primary / Middle School: Ages 11–13 (Grades 6–8)',
+        'Secondary / High School: Ages 14–15 (Grades 9–10)',
+        'Senior Secondary / High School: Ages 16–18 (Grades 11–12)',
+        'Above 18 years',
+        'Open to all',
+    );
 }
 
 function beyond_academics_directory_age_span($label) {
+    $label = preg_replace('/^(Grades? [^(]*?)\s*\([^)]*\)$/u', '$1', $label);
     if (preg_match('/^Grades (\d+)–(\d+)$/u', $label, $m)) {
         return array((int) $m[1] + 5, (int) $m[2] + 6);
     }
@@ -503,23 +511,24 @@ function beyond_academics_directory_age_groups($label) {
     if ($label === 'Open' || $label === 'Open to all' || $label === 'Varies') {
         return array('Open to all');
     }
-    if (preg_match('/^(\d+) Years & Above$/u', $label, $m) && (int) $m[1] >= 13) {
-        return array('13 Years & Above');
-    }
     $span = beyond_academics_directory_age_span($label);
     if ($span === null) {
         return array();
     }
-    if ($span[0] >= 14 && $span[1] <= 18) {
-        return array('Ages 14–18');
+    $bands = array(
+        'Primary / Elementary: Ages 5–10 (Grades KG–5)' => array(5, 10),
+        'Upper Primary / Middle School: Ages 11–13 (Grades 6–8)' => array(11, 13),
+        'Secondary / High School: Ages 14–15 (Grades 9–10)' => array(14, 15),
+        'Senior Secondary / High School: Ages 16–18 (Grades 11–12)' => array(16, 18),
+        'Above 18 years' => array(18, 24),
+    );
+    $groups = array();
+    foreach ($bands as $group => $range) {
+        if ($span[0] <= $range[1] && $span[1] >= $range[0]) {
+            $groups[] = $group;
+        }
     }
-    if ($span[0] >= 18 && $span[1] <= 24) {
-        return array('Ages 18–24');
-    }
-    if ($span[0] >= 5 && $span[1] <= 18) {
-        return array('Ages 5–18');
-    }
-    return array('Ages 6–24+');
+    return $groups;
 }
 
 
@@ -791,14 +800,14 @@ function beyond_academics_directory_shortcode() {
             $official_links = '<span class="beyond-academics-link-placeholder">Not listed in source</span>';
         }
 
-        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . beyond_academics_directory_level_badges($levels) . '</td><td data-label="Age/Grade">' . $cell($grades) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
+        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . beyond_academics_directory_level_badges($levels) . '</td><td data-label="Age/Grade">' . (empty($grades) ? $cell($grades) : implode('<br>', array_map(function ($grade) { return str_replace(' (', '<br>(', esc_html($grade)); }, $grades))) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
     }
 
     $page_html = '<div class="beyond-academics-directory" id="top">';
     $page_html .= '<header class="beyond-academics-hero"><div class="beyond-academics-hero-copy"><p class="beyond-academics-kicker">10xTechClub · Student handbook</p><h1>Beyond Academics</h1><p class="beyond-academics-subtitle">A Categorized list of National and International Competitions</p><p class="beyond-academics-intro">A Student\'s Guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p><a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a></div><figure class="beyond-academics-hero-figure"><img src="' . esc_url(plugin_dir_url(__FILE__) . 'assets/images/hero-robot.png') . '" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /><p style="text-align: center; margin-top: 8px; margin-bottom: 0; font-size: 0.95rem; font-weight: bold; font-style: italic; color: var(--beyond-academics-text);">For the Students of Age 6 to 20 & Above</p></figure></header>'
     $page_html .= '<details class="beyond-academics-toc" id="handbook-directory" open><summary><span><small>CONTENTS</small>Handbook directory</span><span class="beyond-academics-toc-toggle" aria-hidden="true">+</span></summary><ol class="beyond-academics-toc-list"><li><a href="#introduction">Why this handbook exists</a></li><li><a href="#stem-journey">The Four Stages of a STEM Journey</a></li><li><a href="#domain-gallery">STEM Competition Domains at a Glance</a></li><li><a href="#competition-categories">Competition Categories</a></li><li><a href="#finding-the-right-fit">Finding the Right Fit</a></li><li><a href="#master-directory">Master Competition Directory <span>' . count($unique_entries) . ' unique competitions</span></a></li><li><a href="#how-to-succeed">How to Actually Succeed</a></li><li><a href="#designing-the-journey">Designing the Journey, Instead of Just Competing</a></li><li><a href="#student-letter">A Letter to Students</a></li></ol></details>';
 
-    $page_html .= '<section class="beyond-academics-intro-section" id="introduction"><h2>Why this handbook exists</h2><p>For decades, academic success has been measured by marks, ranks, and report cards. That still matters, but the world has quietly changed. Universities, employers, and innovators are now looking beyond grades, for curiosity, creativity, initiative, resilience, and the ability to solve real problems.</p><p>Those qualities aren\'t built by textbooks alone. They\'re built by robots that don\'t work the first time, by presenting ideas in front of judges, by writing code to solve real problems, by launching rockets and designing drones and pitching startup ideas.</p><p>Yet despite thousands of STEM competitions available across India and the world, discovering the right opportunities can be challenging. Information is scattered across hundreds of organisations, government initiatives, and private institutions, making it difficult to know where to begin.</p><p>That’s what this guide is for: to help students discover competitions that match their interests, strengths, and current skill level. Whether a student is passionate about robotics, curious about AI, excited by space exploration, or eager to turn ideas into something real, this handbook helps them find opportunities to learn, experiment, and challenge themselves.</p><p>A student doesn’t need to read from beginning to end. They can start with the contents, choose the category that matches their interests, compare a few options, and shortlist the ones that feel exciting and achievable. The goal isn’t to enter the most competitions; it’s to find the right ones for the student.</p></section>';
+    $page_html .= '<section class="beyond-academics-intro-section" id="introduction"><h2>Why This Handbook Exists</h2><p>For years, academic success has largely been judged by marks, ranks, and report cards. While these still matter, there’s more to a student’s growth than what shows up on a report card. Curiosity, creativity, initiative, resilience, and the ability to solve real-world problems are becoming just as important.</p><p>These skills develop through experience. They grow when a robot refuses to work and a student figures out why, when they present an idea in front of a panel of judges, write code to solve a problem, build a drone, launch a rocket, or pitch an idea they believe in.</p><p>India and the rest of the world offer thousands of STEM competitions, but finding the right ones isn’t always easy. Information is spread across different organisations, government initiatives, and educational institutions, leaving students and parents unsure of where to start or which opportunities are worth exploring.</p><p>This handbook brings those opportunities together in one place. It helps students discover competitions that suit their interests, abilities, and current skill levels. Whether they enjoy building robots, want to explore AI, are fascinated by space, or have an idea they’d love to turn into reality, there’s an opportunity to take that interest a step further.</p><p>There’s no need to read this handbook from cover to cover. Students can browse the contents, head straight to a category that interests them, compare a few competitions, and shortlist the ones they’d like to explore. The idea isn’t to participate in as many competitions as possible, but to find the ones that genuinely interest them, offer room to learn, and feel achievable at their current stage.</p></section>';
 
     $page_html .= '<section class="beyond-academics-editorial beyond-academics-about" id="about-10xtechclub"><h2>What Is 10xTechClub?</h2><p>10xTechClub is a hands-on STEM learning and technology education centre in Pune, India, empowering students to explore emerging technologies, build real-world projects, and develop future-ready skills. Through experiential, project-based learning, students explore Robotics, Artificial Intelligence (AI), Coding, Electronics, Python, 3D Printing, IoT, SpaceTech, and other exciting fields of innovation.</p><p>At 10xTechClub, learning goes beyond textbooks. Students are encouraged to experiment, solve problems, collaborate, design prototypes, participate in hackathons, and turn their ideas into working projects. With structured learning pathways, mentor guidance, and opportunities to apply their knowledge, they develop critical thinking, creativity, teamwork, and an innovation-driven mindset.</p><p>We believe that every curious learner deserves opportunities to explore their potential beyond the classroom. That is why <em>Beyond Academics: The Ultimate STEM Competition Handbook</em> brings together a curated guide to STEM, robotics, science, AI, coding, engineering, space, and innovation competitions in India and around the world. Designed for curious students aged 6–19 and above, this resource helps students discover exciting opportunities, understand competition pathways, and explore ways to turn their curiosity and practical skills into meaningful learning experiences.</p><p><strong>Whether a student is taking first steps into robotics or aspiring to participate in national and international innovation challenges, this handbook is the starting point for exploring what is possible beyond academics.</strong></p></section>';
 
