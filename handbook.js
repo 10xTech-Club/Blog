@@ -283,16 +283,10 @@ function normalizeGrade(value) {
     .replace(/(?<=[A-Za-z])\s*–\s*(?=[A-Za-z])/g, ' & ');
 }
 
-const AGE_GROUPS = ['Ages 6–12', 'Ages 13–18', 'Ages 18+', 'Open / varies'];
-
-const AGE_BANDS = {
-  'Ages 6–12': [6, 12],
-  'Ages 13–18': [13, 18],
-  'Ages 18+': [18, 24]
-};
+const AGE_GROUPS = ['Ages 5–18', 'Ages 14–18', 'Ages 18–24', 'Ages 6–24+', '13 Years & Above', 'Open to all'];
 
 const AGE_SPANS = {
-  '16+ & University & Open': [16, 24],
+  '16+ & University & Open to all': [16, 24],
   'Elementary': [5, 11],
   'Middle School': [11, 14],
   'High School': [14, 18],
@@ -321,20 +315,24 @@ function ageSpan(label) {
   if ((match = label.match(/^(\d+)–(\d+) Years$/))) return [Number(match[1]), Number(match[2])];
   if ((match = label.match(/^Under (\d+)–University$/))) return [Number(match[1]) - 2, 24];
   if ((match = label.match(/^Students under (\d+)$/))) return [5, Number(match[1]) - 1];
-  if ((match = label.match(/^Class (\d+)$/))) return [Number(match[1]) + 5, Number(match[1]) + 6];
-  if (/^K–12$/.test(label) || /^School Students \(up to Class 12\)$/.test(label)) return [5, 18];
+  if ((match = label.match(/^(\d+) Years & Above$/))) return [Number(match[1]), 24];
+  if ((match = label.match(/^Grade (\d+) & Above$/))) return [Number(match[1]) + 5, 24];
+  if ((match = label.match(/^Grade (\d+)$/))) return [Number(match[1]) + 5, Number(match[1]) + 6];
+  if (/^K–12$/.test(label) || /^School Students \(up to Grade 12\)$/.test(label)) return [5, 18];
   return AGE_SPANS[label] || null;
 }
 
 function ageGroupsFor(label) {
-  if (label === 'Open' || label === 'Varies') return AGE_GROUPS.slice();
+  if (label === 'Open' || label === 'Open to all' || label === 'Varies') return ['Open to all'];
+  const minimum = label.match(/^(\d+) Years & Above$/);
+  if (minimum && Number(minimum[1]) >= 13) return ['13 Years & Above'];
   const span = ageSpan(label);
   if (!span) return [];
-  return AGE_GROUPS.filter((group) => {
-    if (!AGE_BANDS[group]) return false;
-    const [low, high] = AGE_BANDS[group];
-    return span[0] <= high && span[1] >= low;
-  });
+  const [start, end] = span;
+  if (start >= 14 && end <= 18) return ['Ages 14–18'];
+  if (start >= 18 && end <= 24) return ['Ages 18–24'];
+  if (start >= 5 && end <= 18) return ['Ages 5–18'];
+  return ['Ages 6–24+'];
 }
 
 function collectEntries(categories) {
@@ -390,7 +388,7 @@ function renderControls(prefix, categories = [], grades = []) {
         <select id="${prefix}-domain"><option value="all">All domains</option>${domains}</select>
       </div>
       <div class="beyond-academics-field">
-        <label for="${prefix}-grade">Age</label>
+        <label for="${prefix}-grade">Age/Grade</label>
         <select id="${prefix}-grade"><option value="all">All listed ages</option>${gradeOptions}</select>
       </div>
       <div class="beyond-academics-field">
@@ -438,7 +436,7 @@ function levelBadges(levels) {
 }
 
 function renderMasterRow(entry) {
-  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age">${labels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.bestFor)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
+  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age/Grade">${labels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.bestFor)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
 }
 
 function renderCategory(category) {
@@ -622,11 +620,9 @@ function buildHandbook(data) {
       ${tableControls}
       <div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div>
       <p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p>
-      <div style="display: flex; align-items: flex-start; gap: 16px; justify-content: space-between;">
-        <div id="master-content" class="beyond-academics-collapsible-content" style="flex: 1;"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table"><caption>Unique competitions and source-provided details</caption><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
+      <div class="beyond-academics-master-bar"><span class="beyond-academics-master-bar-title" id="master-table-title">Unique competitions and source-provided details</span><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory"><span aria-hidden="true">−</span></button></div>
+      <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
       <p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p>
-        </div>
-        <button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory" style="flex-shrink: 0; margin-top: 4px;"><span aria-hidden="true">−</span></button>
       </div>
     </section>
 

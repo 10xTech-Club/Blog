@@ -296,7 +296,7 @@ function beyond_academics_directory_filter_controls($prefix, $categories, $grade
         $slug = sanitize_title($category['title']);
         $html .= '<option value="' . esc_attr($slug) . '">' . esc_html(preg_replace('/^[^\p{L}\p{N}]+/u', '', $category['title'])) . '</option>';
     }
-    $html .= '</select></div><div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-grade">Age</label><select id="' . esc_attr($prefix) . '-grade"><option value="all">All listed ages</option>';
+    $html .= '</select></div><div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-grade">Age/Grade</label><select id="' . esc_attr($prefix) . '-grade"><option value="all">All listed ages</option>';
     foreach ($grades as $grade) {
         $html .= '<option value="' . esc_attr(strtolower($grade)) . '">' . esc_html($grade) . '</option>';
     }
@@ -445,7 +445,7 @@ function beyond_academics_directory_normalize_grade($value) {
 }
 
 function beyond_academics_directory_age_group_names() {
-    return array('Ages 6–12', 'Ages 13–18', 'Ages 18+', 'Open / varies');
+    return array('Ages 5–18', 'Ages 14–18', 'Ages 18–24', 'Ages 6–24+', '13 Years & Above', 'Open to all');
 }
 
 function beyond_academics_directory_age_span($label) {
@@ -461,14 +461,20 @@ function beyond_academics_directory_age_span($label) {
     if (preg_match('/^Students under (\d+)$/u', $label, $m)) {
         return array(5, (int) $m[1] - 1);
     }
-    if (preg_match('/^Class (\d+)$/u', $label, $m)) {
+    if (preg_match('/^(\d+) Years & Above$/u', $label, $m)) {
+        return array((int) $m[1], 24);
+    }
+    if (preg_match('/^Grade (\d+) & Above$/u', $label, $m)) {
+        return array((int) $m[1] + 5, 24);
+    }
+    if (preg_match('/^Grade (\d+)$/u', $label, $m)) {
         return array((int) $m[1] + 5, (int) $m[1] + 6);
     }
-    if ($label === 'K–12' || $label === 'School Students (up to Class 12)') {
+    if ($label === 'K–12' || $label === 'School Students (up to Grade 12)') {
         return array(5, 18);
     }
     $spans = array(
-        '16+ & University & Open' => array(16, 24),
+        '16+ & University & Open to all' => array(16, 24),
         'Elementary' => array(5, 11),
         'Middle School' => array(11, 14),
         'High School' => array(14, 18),
@@ -494,21 +500,26 @@ function beyond_academics_directory_age_span($label) {
 }
 
 function beyond_academics_directory_age_groups($label) {
-    if ($label === 'Open' || $label === 'Varies') {
-        return beyond_academics_directory_age_group_names();
+    if ($label === 'Open' || $label === 'Open to all' || $label === 'Varies') {
+        return array('Open to all');
+    }
+    if (preg_match('/^(\d+) Years & Above$/u', $label, $m) && (int) $m[1] >= 13) {
+        return array('13 Years & Above');
     }
     $span = beyond_academics_directory_age_span($label);
     if ($span === null) {
         return array();
     }
-    $bands = array('Ages 6–12' => array(6, 12), 'Ages 13–18' => array(13, 18), 'Ages 18+' => array(18, 24));
-    $groups = array();
-    foreach ($bands as $group => $range) {
-        if ($span[0] <= $range[1] && $span[1] >= $range[0]) {
-            $groups[] = $group;
-        }
+    if ($span[0] >= 14 && $span[1] <= 18) {
+        return array('Ages 14–18');
     }
-    return $groups;
+    if ($span[0] >= 18 && $span[1] <= 24) {
+        return array('Ages 18–24');
+    }
+    if ($span[0] >= 5 && $span[1] <= 18) {
+        return array('Ages 5–18');
+    }
+    return array('Ages 6–24+');
 }
 
 
@@ -780,7 +791,7 @@ function beyond_academics_directory_shortcode() {
             $official_links = '<span class="beyond-academics-link-placeholder">Not listed in source</span>';
         }
 
-        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . beyond_academics_directory_level_badges($levels) . '</td><td data-label="Age">' . $cell($grades) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
+        $master_rows .= '<tr' . $attributes . '><th scope="row" data-label="Competition">' . esc_html($entry['name']) . '</th><td data-label="Scope / level">' . beyond_academics_directory_level_badges($levels) . '</td><td data-label="Age/Grade">' . $cell($grades) . '</td><td data-label="Format">' . $cell($formats) . '</td><td data-label="Difficulty Level">' . $cell($difficulties) . '</td><td data-label="Domain">' . $cell($best_for) . '</td><td data-label="Official website">' . $official_links . '</td></tr>';
     }
 
     $page_html = '<div class="beyond-academics-directory" id="top">';
@@ -807,7 +818,7 @@ function beyond_academics_directory_shortcode() {
 
     $page_html .= beyond_academics_directory_spotlight_html($categories);
 
-    $page_html .= '<section class="beyond-academics-directory-block" id="master-directory"><div class="beyond-academics-section-heading"><p class="beyond-academics-kicker">Search all domains</p><h2>Master Competition Directory</h2><p>One listing per unique competition name. Where the handbook repeats a competition across domains, its source-listed domains and “Best For” guidance are combined here. Choose a category in the filters to narrow the list.</p></div><div class="beyond-academics-directory-note"><strong>Source notes:</strong> Eligibility, format, level, difficulty, and “Best For” are shown only when present in the handbook. Difficulty is the guide\'s comparative rating, not an organiser rating. Cost and time commitment are not listed when the source does not provide them. Scope filters are derived from the source\'s level wording. This is a suggested list and does not imply endorsement of any competition.</div>' . beyond_academics_directory_filter_controls('master', $categories, $grade_options) . '<div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div><p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p><div style="display: flex; align-items: flex-start; gap: 16px; justify-content: space-between;"><div id="master-content" class="beyond-academics-collapsible-content" style="flex: 1;"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table"><caption>Unique competitions and source-provided details</caption><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>' . $master_rows . '</tbody></table></div><p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p></div><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory" style="flex-shrink: 0; margin-top: 4px;"><span aria-hidden="true">−</span></button></div></div></section>';
+    $page_html .= '<section class="beyond-academics-directory-block" id="master-directory"><div class="beyond-academics-section-heading"><p class="beyond-academics-kicker">Search all domains</p><h2>Master Competition Directory</h2><p>One listing per unique competition name. Where the handbook repeats a competition across domains, its source-listed domains and “Best For” guidance are combined here. Choose a category in the filters to narrow the list.</p></div><div class="beyond-academics-directory-note"><strong>Source notes:</strong> Eligibility, format, level, difficulty, and “Best For” are shown only when present in the handbook. Difficulty is the guide\'s comparative rating, not an organiser rating. Cost and time commitment are not listed when the source does not provide them. Scope filters are derived from the source\'s level wording. This is a suggested list and does not imply endorsement of any competition.</div>' . beyond_academics_directory_filter_controls('master', $categories, $grade_options) . '<div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div><p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p><div class="beyond-academics-master-bar"><span class="beyond-academics-master-bar-title" id="master-table-title">Unique competitions and source-provided details</span><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory"><span aria-hidden="true">−</span></button></div><div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>' . $master_rows . '</tbody></table></div><p class="beyond-academics-return"><a href="#handbook-directory">Back to handbook directory</a></p></div></div></section>';
 
     $page_html .= '<section class="beyond-academics-download" id="download-directory"><span class="beyond-academics-download-icon"><svg viewBox="0 0 64 64" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h20l10 10v38H18zM38 8v10h10M32 28v14M26 36l6 6 6-6"/></svg></span><div class="beyond-academics-download-copy"><p class="beyond-academics-kicker">Free download</p><h2>Take the Directory Along</h2><p>Download a printable PDF of all national and international STEM competitions across all categories, with levels, ages, formats, difficulty ratings, and official websites. Verify all details directly with the organizers before registering.</p><p class="beyond-academics-download-meta">PDF · 14 pages · Released Oct 2026</p></div><a class="beyond-academics-primary-button beyond-academics-download-button" href="' . esc_url(plugin_dir_url(__FILE__) . 'assets/downloads/STEM-Competition-Directory.pdf') . '" download="STEM-Competition-Directory.pdf">Download PDF</a></section>';
 

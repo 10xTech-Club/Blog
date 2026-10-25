@@ -1618,4 +1618,25 @@
     pointer-events: none;
 }
 
+/* Master directory header bar: title and toggle stay on one line, table collapses below */
+.beyond-academics-master-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 16px 0 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--beyond-academics-border);
+}
 
+.beyond-academics-master-bar-title {
+    flex: 1;
+    min-width: 0;
+    font-weight: 700;
+    color: var(--beyond-academics-text);
+}
+
+.beyond-academics-master-bar .beyond-academics-collapse-toggle {
+    flex-shrink: 0;
+    margin: 0;
+}
