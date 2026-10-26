@@ -300,7 +300,7 @@ function beyond_academics_directory_filter_controls($prefix, $categories, $grade
     foreach ($grades as $grade) {
         $html .= '<option value="' . esc_attr(strtolower($grade)) . '">' . esc_html($grade) . '</option>';
     }
-    $html .= '</select></div><div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-scope">Scope</label><select id="' . esc_attr($prefix) . '-scope"><option value="all">All scopes</option><option value="national">National</option><option value="progression">National to International</option><option value="international">International</option></select></div>';
+    $html .= '</select></div><div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-scope">Scope</label><select id="' . esc_attr($prefix) . '-scope"><option value="all">All scopes</option><option value="National">National</option><option value="International">International</option><option value="International (US-based)">International (US-based)</option><option value="International (Historical)">International (Historical)</option><option value="National → International">National → International</option><option value="National / International">National / International</option></select></div>';
     $html .= '<div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-format">Participation</label><select id="' . esc_attr($prefix) . '-format"><option value="all">Any format</option><option value="individual">Individual</option><option value="team">Team</option><option value="both">Individual or Team</option></select></div>';
     $html .= '<div class="beyond-academics-field"><label for="' . esc_attr($prefix) . '-difficulty">Difficulty Level</label><select id="' . esc_attr($prefix) . '-difficulty"><option value="all">All levels</option><option value="1">1 Star (Beginner)</option><option value="2">2 Star (Easy)</option><option value="3">3 Star (Intermediate)</option><option value="4">4 Star (Advanced)</option><option value="5">5 Star (Expert)</option></select></div>';
     $html .= '<div class="beyond-academics-field beyond-academics-actions-field"><button type="button" class="beyond-academics-secondary-button" data-clear-filters="' . esc_attr($prefix) . '">Clear filters</button></div></div>';
@@ -524,7 +524,7 @@ function beyond_academics_directory_age_groups($label) {
     );
     $groups = array();
     foreach ($bands as $group => $range) {
-        if ($span[0] <= $range[1] && $span[1] >= $range[0]) {
+        if ($group === 'Above 18 years' ? $span[1] > 18 : ($span[0] <= $range[1] && $span[1] >= $range[0])) {
             $groups[] = $group;
         }
     }
@@ -779,7 +779,7 @@ function beyond_academics_directory_shortcode() {
         $best_for = array_values(array_unique($best_for));
         $websites = beyond_academics_directory_unique_values($appearances, 'official_website');
         $domain_slugs = array_keys($entry['categories']);
-        $scopes = array_unique(array_map('beyond_academics_directory_scope', $levels));
+        $scopes = array_values(array_unique($levels));
         $participation = array_unique(array_map('beyond_academics_directory_participation', $formats));
         $difficulty_numbers = array_unique(array_map(function ($value) {
             return (string) substr_count($value, '⭐');

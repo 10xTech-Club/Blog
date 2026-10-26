@@ -345,6 +345,7 @@ function ageGroupsFor(label) {
   return AGE_GROUPS.filter((group) => {
     if (!AGE_BANDS[group]) return false;
     const [low, high] = AGE_BANDS[group];
+    if (group === 'Above 18 years') return span[1] > 18;
     return span[0] <= high && span[1] >= low;
   });
 }
@@ -407,7 +408,7 @@ function renderControls(prefix, categories = [], grades = []) {
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-scope">Scope</label>
-        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="national">National</option><option value="progression">National to International</option><option value="international">International</option></select>
+        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="National">National</option><option value="International">International</option><option value="International (US-based)">International (US-based)</option><option value="International (Historical)">International (Historical)</option><option value="National → International">National → International</option><option value="National / International">National / International</option></select>
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-format">Participation</label>
@@ -427,7 +428,7 @@ function renderControls(prefix, categories = [], grades = []) {
 function itemAttributes(entry) {
   const domains = entry.categories.map(([slug]) => slug).join('|');
   const grades = entry.gradeKeys.map((value) => value.toLowerCase()).join('|');
-  const scopes = Array.from(new Set(entry.levels.map(scopeFor))).join('|');
+  const scopes = Array.from(new Set(entry.levels)).join('|');
   const formats = Array.from(new Set(entry.formats.map(participationFor))).join('|');
   const difficulty = Array.from(new Set(entry.difficulties.map(difficultyCount))).join('|');
   const search = [entry.name, ...entry.categories.map(([, title]) => title), ...entry.grades, ...entry.levels, ...entry.formats, ...entry.difficulties, ...entry.bestFor].join(' ').toLowerCase();

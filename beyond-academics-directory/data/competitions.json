@@ -87,7 +87,7 @@
           "category": "Robotics",
           "level": "International",
           "grades": "14–18 Years",
-          "format": "National Team",
+          "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Representing your country",
           "official_website": "https://first.global",
@@ -325,14 +325,14 @@
           "verification_note": ""
         },
         {
-          "name": "Moon to Mars Ice & Prospecting Challenge*",
+          "name": "Moon to Mars Ice & Prospecting Challenge",
           "category": "Robotics / Space",
           "level": "International",
           "grades": "14–22 Years",
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Space robotics concepts",
-          "official_website": "rascal.nianet.org (historical/legacy challenge)",
+          "official_website": "https://www.nasa.gov/centers-and-facilities/langley/moon-to-mars-ice-and-prospecting-challenge-aims-to-break-through-more-than-just-ice/",
           "verification_note": ""
         },
         {
@@ -463,7 +463,7 @@
           "verification_note": ""
         },
         {
-          "name": "Broadcom MASTERS*",
+          "name": "Broadcom MASTERS",
           "category": "Science",
           "level": "International (Historical)",
           "grades": "11–14 Years",
@@ -643,6 +643,28 @@
           "best_for": "Collaborative problem solving",
           "official_website": "https://purplecomet.org",
           "verification_note": ""
+        },
+        {
+          "name": "National Financial Olympiad (NFO)",
+          "category": "Mathematics",
+          "level": "National",
+          "grades": "10–18 Years",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐",
+          "best_for": "Finance & Financial Literacy",
+          "official_website": "https://nationalfinanceolympiad.com/",
+          "verification_note": ""
+        },
+        {
+          "name": "International Finance Olympiad (IFO)",
+          "category": "Mathematics",
+          "level": "International",
+          "grades": "13–17 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Finance, Economics & Analytical Reasoning",
+          "official_website": "https://www.finance-olympiad.com/",
+          "verification_note": ""
         }
       ]
     },
@@ -695,36 +717,36 @@
           "verification_note": ""
         },
         {
-          "name": "Google Code Jam*",
+          "name": "Google Summer of Code",
           "category": "Competitive Programming",
           "level": "International",
           "grades": "16 Years & Above",
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Algorithmic programming (historical)",
-          "official_website": "https://codingcompetitions.withgoogle.com",
+          "official_website": "https://summerofcode.withgoogle.com/",
           "verification_note": ""
         },
         {
-          "name": "Google Kick Start*",
+          "name": "Google Kick Start",
           "category": "Competitive Programming",
           "level": "International",
           "grades": "16 Years & Above",
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Competitive programming (historical)",
-          "official_website": "https://codingcompetitions.withgoogle.com",
+          "official_website": "https://blog.google/innovation-and-ai/technology/developers-tools/join-kick-start-a-coding-competition-for-all-levels/",
           "verification_note": ""
         },
         {
-          "name": "Google Hash Code*",
+          "name": "The Big Code 2026",
           "category": "Team Programming",
           "level": "International",
           "grades": "18 Years & Above",
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Team-based programming (historical)",
-          "official_website": "https://codingcompetitions.withgoogle.com",
+          "official_website": "https://rsvp.withgoogle.com/events/the-big-code-2026/home?pli=1",
           "verification_note": ""
         },
         {
@@ -932,7 +954,7 @@
           "verification_note": ""
         },
         {
-          "name": "NVIDIA Student AI Competitions*",
+          "name": "NVIDIA Student AI Competitions",
           "category": "Artificial Intelligence",
           "level": "International",
           "grades": "6–22 Years",
@@ -943,7 +965,7 @@
           "verification_note": ""
         },
         {
-          "name": "Intel AI Global Impact Festival*",
+          "name": "Intel AI Global Impact Festival",
           "category": "Artificial Intelligence",
           "level": "International",
           "grades": "6–22 Years",
@@ -984,7 +1006,7 @@
         {
           "name": "Samsung Solve for Tomorrow",
           "category": "Innovation",
-          "level": "National / International*",
+          "level": "National / International",
           "grades": "6–18 Years",
           "format": "Team",
           "difficulty": "⭐⭐⭐",
@@ -1048,7 +1070,7 @@
           "verification_note": ""
         },
         {
-          "name": "Young Inventors Prize*",
+          "name": "Young Inventors Prize",
           "category": "Innovation",
           "level": "International",
           "grades": "6–30 Years",
@@ -1066,7 +1088,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Creative problem solving",
-          "official_website": null,
+          "official_website": "https://globalinnovationchallenge.org/",
           "verification_note": "Official website requires manual verification."
         },
         {
@@ -1249,6 +1271,17 @@
           "difficulty": "⭐⭐⭐",
           "best_for": "Business creation & financial literacy",
           "official_website": "https://ja.org",
+          "verification_note": ""
+        },
+        {
+          "name": "Shark Tank India",
+          "category": "Entrepreneurship",
+          "level": "National",
+          "grades": "18 Years & Above",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Startup ideas & entrepreneurship",
+          "official_website": "https://sharktank.sonyliv.com/youngfounder/",
           "verification_note": ""
         }
       ]
@@ -1550,14 +1583,14 @@
           "verification_note": ""
         },
         {
-          "name": "Drone Federation of India Challenges*",
+          "name": "Drone Federation of India Challenges",
           "category": "Drone Innovation",
           "level": "National",
           "grades": "6–24 Years",
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Drone innovation & applications",
-          "official_website": "https://www.dronefed.org",
+          "official_website": "https://www.dronefederation.in/",
           "verification_note": ""
         },
         {
@@ -1754,7 +1787,7 @@
           "verification_note": ""
         },
         {
-          "name": "DreamHack Game Development Competitions*",
+          "name": "DreamHack Game Development Competitions",
           "category": "Game Development",
           "level": "International",
           "grades": "13 Years & Above",
@@ -1765,7 +1798,7 @@
           "verification_note": ""
         },
         {
-          "name": "Student Game Showcase (IGF)*",
+          "name": "Student Game Showcase (IGF)",
           "category": "Game Development",
           "level": "International",
           "grades": "18–22 Years",
