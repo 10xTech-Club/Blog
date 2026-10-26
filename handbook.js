@@ -376,6 +376,8 @@ function collectEntries(categories) {
       levels: values('level'),
       formats: values('format'),
       difficulties: values('difficulty'),
+      domainNames: Array.from(new Set(appearances.map((entry) => String(entry.categoryTitle).replace(/^[^\p{L}\p{N}]+/u, '')))),
+      focus: Array.from(new Set(appearances.map((entry) => String(entry.best_for || '').trim()).filter(Boolean))),
       bestFor: Array.from(new Set(appearances.map((entry) => entry.best_for ? `${String(entry.categoryTitle).replace(/^[^\p{L}\p{N}]+/u, '')}: ${entry.best_for}` : '').filter(Boolean))),
       websites: Array.from(new Set(appearances.map((entry) => safeWebsite(entry.official_website)).filter(Boolean)))
     };
@@ -408,7 +410,7 @@ function renderControls(prefix, categories = [], grades = []) {
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-scope">Scope</label>
-        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="National">National</option><option value="International">International</option><option value="International (US-based)">International (US-based)</option><option value="International (Historical)">International (Historical)</option><option value="National → International">National → International</option><option value="National / International">National / International</option></select>
+        <select id="${prefix}-scope"><option value="all">All scopes</option><option value="National">National</option><option value="International">International</option><option value="International (US-based)">International (US-based)</option><option value="National → International">National → International</option></select>
       </div>
       <div class="beyond-academics-field">
         <label for="${prefix}-format">Participation</label>
@@ -455,7 +457,7 @@ function levelBadges(levels) {
 }
 
 function renderMasterRow(entry) {
-  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age/Grade">${gradeLabels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.bestFor)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
+  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age/Grade">${gradeLabels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.domainNames)}</td><td data-label="Focused">${labels(entry.focus)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
 }
 
 function renderCategory(category) {
@@ -563,7 +565,7 @@ function buildHandbook(data) {
         <p class="beyond-academics-intro">A student's guide to STEM, Robotics, AI, Coding, Science, Engineering, Space &amp; Innovation Competitions.</p>
         <a href="#handbook-directory" class="beyond-academics-primary-button">Browse the handbook</a>
       </div>
-      <figure class="beyond-academics-hero-figure"><img src="${assetBase}assets/images/hero-robot.png" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /><p style="text-align: center; margin-top: 8px; margin-bottom: 0; font-size: 0.95rem; font-weight: bold; font-style: italic; color: var(--beyond-academics-text);">For the Students of Age 6 to 20 & Above</p></figure>
+      <figure class="beyond-academics-hero-figure"><img src="${assetBase}assets/images/hero-robot.png" alt="A wheeled robot with ultrasonic sensors and control boards, with a robotic arm and tools on the workbench behind it" width="1627" height="967" loading="lazy" decoding="async" /><p style="text-align: center; margin-top: 8px; margin-bottom: 0; font-size: 0.95rem; font-weight: bold; font-style: italic; color: var(--beyond-academics-text);">For the Students of Age 5 to 24</p></figure>
     </header>
 
     <details class="beyond-academics-toc" id="handbook-directory" open>
@@ -590,7 +592,7 @@ function buildHandbook(data) {
       <p>There’s no need to read this handbook from cover to cover. Students can browse the contents, head straight to a category that interests them, compare a few competitions, and shortlist the ones they’d like to explore. The idea isn’t to participate in as many competitions as possible, but to find the ones that genuinely interest them, offer room to learn, and feel achievable at their current stage.</p>
     </section>
 
-    <section class="beyond-academics-editorial beyond-academics-about" id="about-10xtechclub"><h2>What Is 10xTechClub?</h2><p>10xTechClub is a hands-on STEM learning and technology education centre in Pune, India, empowering students to explore emerging technologies, build real-world projects, and develop future-ready skills. Through experiential, project-based learning, students explore Robotics, Artificial Intelligence (AI), Coding, Electronics, Python, 3D Printing, IoT, SpaceTech, and other exciting fields of innovation.</p><p>At 10xTechClub, learning goes beyond textbooks. Students are encouraged to experiment, solve problems, collaborate, design prototypes, participate in hackathons, and turn their ideas into working projects. With structured learning pathways, mentor guidance, and opportunities to apply their knowledge, they develop critical thinking, creativity, teamwork, and an innovation-driven mindset.</p><p>We believe that every curious learner deserves opportunities to explore their potential beyond the classroom. That is why <em>Beyond Academics: The Ultimate STEM Competition Handbook</em> brings together a curated guide to STEM, robotics, science, AI, coding, engineering, space, and innovation competitions in India and around the world. Designed for curious students aged 6–19 and above, this resource helps students discover exciting opportunities, understand competition pathways, and explore ways to turn their curiosity and practical skills into meaningful learning experiences.</p><p><strong>Whether a student is taking first steps into robotics or aspiring to participate in national and international innovation challenges, this handbook is the starting point for exploring what is possible beyond academics.</strong></p></section>
+    <section class="beyond-academics-editorial beyond-academics-about" id="about-10xtechclub"><h2>What Is 10xTechClub?</h2><p>10xTechClub is a hands-on STEM learning and technology education centre in Pune, India, empowering students to explore emerging technologies, build real-world projects, and develop future-ready skills. Through experiential, project-based learning, students explore Robotics, Artificial Intelligence (AI), Coding, Electronics, Python, Data Science & Analytics, 3D Design & Printing, IoT, Drones, SpaceTech and other emerging fields of innovation including Startups & Entrepreneurships.</p><p>At 10xTechClub, learning goes beyond textbooks. Students are encouraged to experiment, solve problems, collaborate, design prototypes, participate in hackathons, and turn their ideas into working projects. With structured learning pathways, mentor guidance, and opportunities to apply their knowledge, they develop critical thinking, creativity, teamwork, and an innovation-driven mindset.</p><p>We believe that every curious learner deserves opportunities to explore their potential beyond the classroom. That is why <em>Beyond Academics: The Ultimate STEM Competition Handbook</em> brings together a curated guide to STEM, robotics, science, AI, coding, engineering, space, and innovation competitions in India and around the world. Designed for curious students aged 6–19 and above, this resource helps students discover exciting opportunities, understand competition pathways, and explore ways to turn their curiosity and practical skills into meaningful learning experiences.</p><p><strong>Whether a student is taking first steps into robotics or aspiring to participate in national and international innovation challenges, this handbook is the starting point for exploring what is possible beyond academics.</strong></p></section>
 
     <section class="beyond-academics-editorial beyond-academics-journey" id="stem-journey">
       <p class="beyond-academics-kicker">The STEM journey</p>
@@ -640,7 +642,7 @@ function buildHandbook(data) {
       <div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div>
       <p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p>
       <div class="beyond-academics-master-bar"><span class="beyond-academics-master-bar-title" id="master-table-title">Unique competitions and source-provided details</span><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory"><span aria-hidden="true">−</span></button></div>
-      <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
+      <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Focused</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
       <p class="beyond-academics-return beyond-academics-master-return"><a href="#handbook-directory">Back to handbook directory</a><a href="#master-directory">Back to filters</a></p>
       </div>
     </section>

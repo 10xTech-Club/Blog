@@ -465,12 +465,12 @@
         {
           "name": "Broadcom MASTERS",
           "category": "Science",
-          "level": "International (Historical)",
+          "level": "International",
           "grades": "11–14 Years",
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "STEM research",
-          "official_website": "https://www.societyforscience.org",
+          "official_website": "https://www.societyforscience.org/broadcom-masters/",
           "verification_note": ""
         },
         {
@@ -761,25 +761,25 @@
           "verification_note": ""
         },
         {
-          "name": "International Olympiad in Informatics (IOI)",
-          "category": "Informatics",
-          "level": "International",
-          "grades": "6–18 Years",
-          "format": "Individual",
-          "difficulty": "⭐⭐⭐⭐⭐",
-          "best_for": "Elite programming pathway",
-          "official_website": "https://ioinformatics.org",
-          "verification_note": ""
-        },
-        {
           "name": "Indian Olympiad in Informatics (IOI Pathway)",
           "category": "Informatics",
           "level": "National → International",
-          "grades": "6–18 Years",
+          "grades": "5–20 Years",
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "National selection for IOI",
           "official_website": "https://www.iarcs.org.in",
+          "verification_note": ""
+        },
+        {
+          "name": "International Olympiad in Informatics (IOI)",
+          "category": "Informatics",
+          "level": "National → International",
+          "grades": "5–20 Years",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Elite programming pathway",
+          "official_website": "https://ioinformatics.org",
           "verification_note": ""
         },
         {
@@ -1004,14 +1004,25 @@
           "verification_note": ""
         },
         {
-          "name": "Samsung Solve for Tomorrow",
+          "name": "Samsung Solve for Tomorrow - India",
           "category": "Innovation",
-          "level": "National / International",
-          "grades": "6–18 Years",
-          "format": "Team",
-          "difficulty": "⭐⭐⭐",
+          "level": "National",
+          "grades": "14–22 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
           "best_for": "Social innovation & technology",
-          "official_website": "https://www.samsung.com/solvefortomorrow",
+          "official_website": "https://www.samsung.com/in/solvefortomorrow/",
+          "verification_note": ""
+        },
+        {
+          "name": "Samsung Solve for Tomorrow - Global",
+          "category": "Innovation",
+          "level": "International",
+          "grades": "6–18 Years",
+          "format": "Individual / Team",
+          "difficulty": "⭐⭐⭐⭐",
+          "best_for": "Social innovation & technology",
+          "official_website": "https://csr.samsung.com/en/program/samsung-solve-for-tomorrow",
           "verification_note": ""
         },
         {
@@ -1274,14 +1285,14 @@
           "verification_note": ""
         },
         {
-          "name": "Shark Tank India",
+          "name": "Shark Tank India - Young Founders",
           "category": "Entrepreneurship",
           "level": "National",
-          "grades": "18 Years & Above",
+          "grades": "6–15 Years",
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Startup ideas & entrepreneurship",
-          "official_website": "https://sharktank.sonyliv.com/youngfounder/",
+          "official_website": "https://oll.co/shark-tank-india-season-6-young-founders-special",
           "verification_note": ""
         }
       ]
@@ -1495,15 +1506,15 @@
       "slug": "-drones-autonomous-systems",
       "competitions": [
         {
-          "name": "Drone Olympiad (India)",
+          "name": "NIDAR 2026-27 (National Innovation in Drone Application & Research)",
           "category": "Drone Technology",
           "level": "National",
-          "grades": "6–24 Years",
-          "format": "Individual / Team",
+          "grades": "Open to all",
+          "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Drone piloting & innovation",
-          "official_website": null,
-          "verification_note": "Official website requires manual verification."
+          "official_website": "https://www.nidar.org.in/",
+          "verification_note": ""
         },
         {
           "name": "SAE Aero Design",
