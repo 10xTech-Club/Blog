@@ -457,7 +457,7 @@ function levelBadges(levels) {
 }
 
 function renderMasterRow(entry) {
-  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope / level">${levelBadges(entry.levels)}</td><td data-label="Age/Grade">${gradeLabels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.domainNames)}</td><td data-label="Focused">${labels(entry.focus)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
+  return `<tr ${itemAttributes(entry)}><th scope="row" data-label="Competition">${escapeHtml(entry.name)}</th><td data-label="Scope">${levelBadges(entry.levels)}</td><td data-label="Age/Grade">${gradeLabels(entry.grades)}</td><td data-label="Format">${labels(entry.formats)}</td><td data-label="Difficulty Level">${labels(entry.difficulties)}</td><td data-label="Domain">${labels(entry.domainNames)}</td><td data-label="Focus">${labels(entry.focus)}</td><td data-label="Official website">${officialLinks(entry.websites)}</td></tr>`;
 }
 
 function renderCategory(category) {
@@ -642,7 +642,7 @@ function buildHandbook(data) {
       <div class="beyond-academics-results-meta" id="master-count" aria-live="polite"></div>
       <p class="beyond-academics-empty-state" id="master-empty" hidden>No competitions match these filters. Try a broader search or clear filters.</p>
       <div class="beyond-academics-master-bar"><span class="beyond-academics-master-bar-title" id="master-table-title">Unique competitions and source-provided details</span><button class="beyond-academics-collapse-toggle" id="master-toggle" aria-expanded="true" aria-controls="master-content" title="Toggle master directory"><span aria-hidden="true">−</span></button></div>
-      <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope / level</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Focused</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
+      <div id="master-content" class="beyond-academics-collapsible-content"><div class="beyond-academics-table-wrapper beyond-academics-master-table"><table class="beyond-academics-table" aria-labelledby="master-table-title"><thead><tr><th scope="col">Competition</th><th scope="col">Scope</th><th scope="col">Age/Grade</th><th scope="col">Format</th><th scope="col">Difficulty Level</th><th scope="col">Domain</th><th scope="col">Focus</th><th scope="col">Official website</th></tr></thead><tbody>${masterRows}</tbody></table></div>
       <p class="beyond-academics-return beyond-academics-master-return"><a href="#handbook-directory">Back to handbook directory</a><a href="#master-directory">Back to filters</a></p>
       </div>
     </section>

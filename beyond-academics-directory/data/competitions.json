@@ -13,7 +13,7 @@
           "format": "Team",
           "difficulty": "⭐",
           "best_for": "Young beginners exploring STEM",
-          "official_website": "https://firstinspires.org",
+          "official_website": "https://firstinspires.org/programs/fll/",
           "verification_note": ""
         },
         {
@@ -24,7 +24,7 @@
           "format": "Team",
           "difficulty": "⭐⭐",
           "best_for": "Robotics, teamwork & innovation",
-          "official_website": "https://firstinspires.org",
+          "official_website": "https://firstinspires.org/programs/fll/",
           "verification_note": ""
         },
         {
@@ -68,7 +68,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Engineering & advanced robotics",
-          "official_website": "https://firstinspires.org",
+          "official_website": "https://firstinspires.org/programs/ftc/",
           "verification_note": ""
         },
         {
@@ -79,7 +79,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Industrial-scale robotics",
-          "official_website": "https://firstinspires.org",
+          "official_website": "https://firstinspires.org/programs/frc/",
           "verification_note": ""
         },
         {
@@ -123,7 +123,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Advanced engineering",
-          "official_website": "https://vexrobotics.com",
+          "official_website": "https://vexrobotics.com/v5/competition",
           "verification_note": ""
         },
         {
@@ -134,7 +134,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "University robotics",
-          "official_website": "https://roboticseducation.org",
+          "official_website": "https://events.vex.com",
           "verification_note": ""
         },
         {
@@ -167,7 +167,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Engineering design",
-          "official_website": "https://bestinc.org",
+          "official_website": "https://bestrobotics.org",
           "verification_note": ""
         },
         {
@@ -189,7 +189,7 @@
           "format": "Team",
           "difficulty": "⭐⭐",
           "best_for": "Introductory autonomous robotics",
-          "official_website": "https://kipr.org",
+          "official_website": "https://www.botball.org",
           "verification_note": ""
         },
         {
@@ -211,7 +211,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Robotics & engineering",
-          "official_website": "https://iroc.org",
+          "official_website": "https://www.iroc.org",
           "verification_note": ""
         },
         {
@@ -244,7 +244,7 @@
           "format": "Team",
           "difficulty": "⭐",
           "best_for": "Early robotics learning",
-          "official_website": "https://earlyrobotics.org",
+          "official_website": "http://earlyrobotics.org",
           "verification_note": ""
         },
         {
@@ -266,7 +266,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Open robotics competition",
-          "official_website": "https://robogames.net",
+          "official_website": "http://robogames.net/index.php",
           "verification_note": ""
         },
         {
@@ -310,7 +310,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Autonomous underwater vehicles",
-          "official_website": "https://robonation.org",
+          "official_website": "https://robosub.org",
           "verification_note": ""
         },
         {
@@ -332,7 +332,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Space robotics concepts",
-          "official_website": "https://www.nasa.gov/centers-and-facilities/langley/moon-to-mars-ice-and-prospecting-challenge-aims-to-break-through-more-than-just-ice/",
+          "official_website": "https://nasa.gov/centers-and-facilities/langley/moon-to-mars-ice-and-prospecting-challenge-aims-to-break-through-more-than-just-ice/",
           "verification_note": ""
         },
         {
@@ -343,7 +343,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Robotics competitions",
-          "official_website": "https://robotgames.com",
+          "official_website": "https://westerncanada.cbe.ab.ca/news/western-canada-robotics-club-2025-2026-",
           "verification_note": ""
         }
       ]
@@ -360,7 +360,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Scientific research projects",
-          "official_website": "https://www.irisnationalfair.org",
+          "official_website": "https://irisnationalfair.org",
           "verification_note": ""
         },
         {
@@ -371,7 +371,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Advanced scientific research",
-          "official_website": "https://www.societyforscience.org/isef",
+          "official_website": "https://societyforscience.org/isef",
           "verification_note": ""
         },
         {
@@ -393,7 +393,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Water research & sustainability",
-          "official_website": "https://www.siwi.org",
+          "official_website": "https://siwi.org",
           "verification_note": ""
         },
         {
@@ -404,7 +404,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Original scientific research",
-          "official_website": "https://www.icys.info",
+          "official_website": "https://icysconference.com",
           "verification_note": ""
         },
         {
@@ -415,7 +415,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Exposure to global science & research",
-          "official_website": "https://www.liysf.org.uk",
+          "official_website": "https://liysf.org.uk",
           "verification_note": ""
         },
         {
@@ -426,18 +426,18 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Grassroots scientific research",
-          "official_website": "https://www.ncsc.co.in",
+          "official_website": "https://ncsc.co.in",
           "verification_note": ""
         },
         {
-          "name": "INSPIRE MANAK Awards",
+          "name": "INSPIRE Awards – MANAK",
           "category": "Science & Innovation",
           "level": "National",
           "grades": "Grades 6–10 (11–16 Years)",
           "format": "Individual",
           "difficulty": "⭐⭐",
           "best_for": "Innovation & scientific thinking",
-          "official_website": "https://www.inspireawards-dst.gov.in",
+          "official_website": "https://inspireawards-dst.gov.in",
           "verification_note": ""
         },
         {
@@ -448,7 +448,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "STEM research presentations",
-          "official_website": "https://www.jshs.org",
+          "official_website": "https://jshs.org",
           "verification_note": ""
         },
         {
@@ -459,7 +459,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Research & innovation",
-          "official_website": "https://www.societyforscience.org",
+          "official_website": "https://societyforscience.org/jic/",
           "verification_note": ""
         },
         {
@@ -470,7 +470,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "STEM research",
-          "official_website": "https://www.societyforscience.org/broadcom-masters/",
+          "official_website": "https://societyforscience.org/broadcom-masters/",
           "verification_note": ""
         },
         {
@@ -481,7 +481,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Earth sciences",
-          "official_website": "https://www.geosocindia.org",
+          "official_website": "https://ieso-info.org",
           "verification_note": ""
         }
       ]
@@ -490,6 +490,17 @@
       "title": "📚 Mathematics & Olympiads",
       "slug": "-mathematics-olympiads",
       "competitions": [
+        {
+          "name": "Indian National Mathematical Olympiad (INMO)",
+          "category": "Mathematics",
+          "level": "National",
+          "grades": "14–18 Years",
+          "format": "Individual",
+          "difficulty": "⭐⭐⭐⭐⭐",
+          "best_for": "Advanced problem solving",
+          "official_website": "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2026-2027/",
+          "verification_note": ""
+        },
         {
           "name": "International Mathematical Olympiad (IMO)",
           "category": "Mathematics",
@@ -509,18 +520,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "National Olympiad pathway",
-          "official_website": "https://www.mtai.org.in",
-          "verification_note": ""
-        },
-        {
-          "name": "Indian National Mathematical Olympiad (INMO)",
-          "category": "Mathematics",
-          "level": "National",
-          "grades": "14–18 Years",
-          "format": "Individual",
-          "difficulty": "⭐⭐⭐⭐⭐",
-          "best_for": "Advanced problem solving",
-          "official_website": "https://www.mtai.org.in",
+          "official_website": "https://ioqm.mtai.org.in",
           "verification_note": ""
         },
         {
@@ -531,7 +531,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Higher mathematics",
-          "official_website": "https://www.imc-math.org.uk",
+          "official_website": "https://imc-math.org.uk",
           "verification_note": ""
         },
         {
@@ -542,7 +542,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Mathematical reasoning",
-          "official_website": "https://maa.org",
+          "official_website": "https://maa.org/student-programs/amc/",
           "verification_note": ""
         },
         {
@@ -553,7 +553,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Olympiad preparation",
-          "official_website": "https://maa.org",
+          "official_website": "https://maa.org/maa-invitational-competitions/",
           "verification_note": ""
         },
         {
@@ -564,7 +564,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐",
           "best_for": "Logical thinking",
-          "official_website": "https://www.mathkangaroo.org",
+          "official_website": "https://mathkangaroo.org",
           "verification_note": ""
         },
         {
@@ -575,7 +575,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "Competitive mathematics",
-          "official_website": "https://sasmo.sg",
+          "official_website": "https://simcc.org",
           "verification_note": ""
         },
         {
@@ -597,7 +597,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "International mathematics",
-          "official_website": "https://hkimo.org",
+          "official_website": "https://hongkongimo.com/",
           "verification_note": ""
         },
         {
@@ -630,7 +630,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐",
           "best_for": "Mathematical thinking",
-          "official_website": "https://www.cariboutests.com",
+          "official_website": "https://cariboutests.com",
           "verification_note": ""
         },
         {
@@ -652,7 +652,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "Finance & Financial Literacy",
-          "official_website": "https://nationalfinanceolympiad.com/",
+          "official_website": "https://nationalfinanceolympiad.com",
           "verification_note": ""
         },
         {
@@ -663,7 +663,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Finance, Economics & Analytical Reasoning",
-          "official_website": "https://www.finance-olympiad.com/",
+          "official_website": "https://finance-olympiad.com",
           "verification_note": ""
         }
       ]
@@ -713,7 +713,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Advanced competitive programming",
-          "official_website": "https://www.metahackercup.com",
+          "official_website": "https://www.facebook.com/codingcompetitions",
           "verification_note": ""
         },
         {
@@ -724,7 +724,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Algorithmic programming (historical)",
-          "official_website": "https://summerofcode.withgoogle.com/",
+          "official_website": "https://summerofcode.withgoogle.com",
           "verification_note": ""
         },
         {
@@ -790,7 +790,7 @@
           "format": "Individual",
           "difficulty": "⭐",
           "best_for": "Computational thinking",
-          "official_website": "https://www.bebras.org",
+          "official_website": "https://bebras.org",
           "verification_note": ""
         },
         {
@@ -812,7 +812,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "Coding practice & competitions",
-          "official_website": "https://www.hackerrank.com",
+          "official_website": "https://hackerrank.com",
           "verification_note": ""
         },
         {
@@ -823,7 +823,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "Competitive programming",
-          "official_website": "https://www.codechef.com",
+          "official_website": "https://codechef.com",
           "verification_note": ""
         },
         {
@@ -884,7 +884,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "AI innovation & creativity",
-          "official_website": "https://www.waicy.org",
+          "official_website": "https://waicy.org",
           "verification_note": ""
         },
         {
@@ -939,7 +939,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Machine learning & data science",
-          "official_website": "https://www.kaggle.com/competitions",
+          "official_website": "https://kaggle.com/competitions",
           "verification_note": ""
         },
         {
@@ -972,7 +972,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "AI innovation & real-world impact",
-          "official_website": "https://aiglobalimpactfestival.org",
+          "official_website": "https://intel.com/content/www/us/en/corporate/artificial-intelligence/impact-festival.html",
           "verification_note": ""
         },
         {
@@ -983,7 +983,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "India's national pathway into IOAI",
-          "official_website": "https://india.acm.org/education/inaio",
+          "official_website": "https://indiaai.gov.in",
           "verification_note": ""
         }
       ]
@@ -1000,7 +1000,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Innovation, product design & entrepreneurship",
-          "official_website": "https://www.conradchallenge.org",
+          "official_website": "https://conrad.spacecenter.org",
           "verification_note": ""
         },
         {
@@ -1011,7 +1011,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Social innovation & technology",
-          "official_website": "https://www.samsung.com/in/solvefortomorrow/",
+          "official_website": "https://samsung.com/in/solvefortomorrow/",
           "verification_note": ""
         },
         {
@@ -1026,14 +1026,14 @@
           "verification_note": ""
         },
         {
-          "name": "Inspire Awards – MANAK",
+          "name": "INSPIRE Awards – MANAK",
           "category": "Innovation",
           "level": "National",
           "grades": "Grades 6–10 (11–16 Years)",
           "format": "Individual",
           "difficulty": "⭐⭐",
           "best_for": "Grassroots innovation & scientific thinking",
-          "official_website": "https://www.inspireawards-dst.gov.in",
+          "official_website": "https://inspireawards-dst.gov.in",
           "verification_note": ""
         },
         {
@@ -1055,7 +1055,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Technology-driven innovation",
-          "official_website": "https://www.redbull.com/basement",
+          "official_website": "https://redbull.com/basement",
           "verification_note": ""
         },
         {
@@ -1077,7 +1077,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Climate innovation",
-          "official_website": "https://earthprize.org",
+          "official_website": "https://theearthprize.org",
           "verification_note": ""
         },
         {
@@ -1088,7 +1088,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Inventive thinking & problem solving",
-          "official_website": "https://www.epo.org",
+          "official_website": "https://younginventorsprize.org",
           "verification_note": ""
         },
         {
@@ -1099,7 +1099,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Creative problem solving",
-          "official_website": "https://globalinnovationchallenge.org/",
+          "official_website": "https://globalinnovationchallenge.org",
           "verification_note": "Official website requires manual verification."
         },
         {
@@ -1149,7 +1149,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Innovation commercialization",
-          "official_website": "https://www.conradchallenge.org",
+          "official_website": "https://conrad.spacecenter.org",
           "verification_note": ""
         },
         {
@@ -1182,7 +1182,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Social innovation & entrepreneurship",
-          "official_website": "https://www.hultprize.org",
+          "official_website": "https://hultprize.org",
           "verification_note": ""
         },
         {
@@ -1193,7 +1193,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Business planning & pitching",
-          "official_website": "https://youngtycoons.com",
+          "official_website": "https://joinytbc.eduswami.com",
           "verification_note": ""
         },
         {
@@ -1215,18 +1215,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Startup ecosystem & mentoring",
-          "official_website": "https://tie.org/programs/tie-young-entrepreneurs",
-          "verification_note": ""
-        },
-        {
-          "name": "Smart India Hackathon (Software & Hardware Editions)",
-          "category": "Innovation & Entrepreneurship",
-          "level": "National",
-          "grades": "18–24 Years",
-          "format": "Team",
-          "difficulty": "⭐⭐⭐⭐",
-          "best_for": "Problem-solving, innovation & product development",
-          "official_website": "https://www.sih.gov.in",
+          "official_website": "https://events.tie.org/TiEYoungEntrepreneursProgramTYE2026-27",
           "verification_note": ""
         },
         {
@@ -1248,7 +1237,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Student innovation & startup ideas",
-          "official_website": "https://www.youthideathon.in",
+          "official_website": "https://youthideathon.in",
           "verification_note": ""
         },
         {
@@ -1364,7 +1353,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Rover design & engineering",
-          "official_website": "https://www.nasa.gov",
+          "official_website": "https://nasa.gov/learning-resources/nasa-human-exploration-rover-challenge/",
           "verification_note": ""
         },
         {
@@ -1375,7 +1364,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Space app development",
-          "official_website": "https://www.nasa.gov",
+          "official_website": "https://nasa.gov/learning-resources/app-development-challenge/",
           "verification_note": ""
         },
         {
@@ -1397,7 +1386,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Rocket engineering",
-          "official_website": "https://www.nasa.gov",
+          "official_website": "https://nasa.gov/learning-resources/nasa-student-launch/",
           "verification_note": ""
         },
         {
@@ -1408,7 +1397,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Lunar robotics & excavation",
-          "official_website": "https://www.nasa.gov",
+          "official_website": "https://nasa.gov/learning-resources/lunabotics-challenge/",
           "verification_note": ""
         },
         {
@@ -1419,7 +1408,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Aerospace innovation",
-          "official_website": "https://www.conradchallenge.org",
+          "official_website": "https://conrad.spacecenter.org/aerospace-and-aviation/",
           "verification_note": ""
         },
         {
@@ -1463,7 +1452,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Space habitats & engineering design",
-          "official_website": "https://spacesettlementcontest.org",
+          "official_website": "https://aerospaceeducationcompetitions.org/",
           "verification_note": ""
         },
         {
@@ -1474,7 +1463,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Satellite mission design",
-          "official_website": "https://www.esa.int",
+          "official_website": "https://esa.int",
           "verification_note": ""
         },
         {
@@ -1485,7 +1474,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Flight experiments",
-          "official_website": "https://www.nasa.gov",
+          "official_website": "https://usa.gov/challenges/nasa-techrise-student-challenge",
           "verification_note": ""
         },
         {
@@ -1496,7 +1485,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Space biology research",
-          "official_website": "https://www.genesinspace.org",
+          "official_website": "https://genesinspace.org",
           "verification_note": ""
         }
       ]
@@ -1513,7 +1502,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Drone piloting & innovation",
-          "official_website": "https://www.nidar.org.in/",
+          "official_website": "https://nidar.org.in",
           "verification_note": ""
         },
         {
@@ -1524,7 +1513,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Aircraft & UAV engineering",
-          "official_website": "https://www.saeaerodesign.com",
+          "official_website": "https://saeaerodesign.com",
           "verification_note": ""
         },
         {
@@ -1546,7 +1535,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "AI, vision & autonomous drones",
-          "official_website": "https://www.auvsi.org",
+          "official_website": "https://auvsi.org",
           "verification_note": ""
         },
         {
@@ -1557,7 +1546,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Advanced autonomous flight",
-          "official_website": "https://www.aerialroboticscompetition.org",
+          "official_website": "http://aerialroboticscompetition.org",
           "verification_note": ""
         },
         {
@@ -1568,7 +1557,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Competitive drone racing",
-          "official_website": "https://www.fai.org",
+          "official_website": "https://fai.org",
           "verification_note": ""
         },
         {
@@ -1579,7 +1568,7 @@
           "format": "Individual",
           "difficulty": "⭐⭐⭐",
           "best_for": "FPV drone racing",
-          "official_website": "https://www.multigp.com",
+          "official_website": "https://multigp.com",
           "verification_note": ""
         },
         {
@@ -1601,7 +1590,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Drone innovation & applications",
-          "official_website": "https://www.dronefederation.in/",
+          "official_website": "https://dronefederation.in",
           "verification_note": ""
         },
         {
@@ -1662,7 +1651,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Game mechanics & design",
-          "official_website": "https://itch.io",
+          "official_website": "https://itch.io/jam/gmtk-jam-2026",
           "verification_note": ""
         },
         {
@@ -1673,7 +1662,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Unreal Engine game development",
-          "official_website": "https://unrealengine.com",
+          "official_website": "https://unrealengine.com/news/2026-epic-ai-megajam",
           "verification_note": ""
         },
         {
@@ -1684,7 +1673,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Godot game development",
-          "official_website": "https://itch.io",
+          "official_website": "https://godotwildjam.com",
           "verification_note": ""
         },
         {
@@ -1706,7 +1695,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Indie game development",
-          "official_website": "https://itch.io",
+          "official_website": "https://itch.io/jam/pirate",
           "verification_note": ""
         },
         {
@@ -1772,7 +1761,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "AAA game design",
-          "official_website": "https://gamelabcompetition.com",
+          "official_website": "https://montreal.ubisoft.com/en/our-commitments/education/game-lab-competition/",
           "verification_note": ""
         },
         {
@@ -1794,7 +1783,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Independent game development",
-          "official_website": "https://indiecade.com",
+          "official_website": "https://www.indiecade.com",
           "verification_note": ""
         },
         {
@@ -1826,14 +1815,14 @@
       "slug": "-national-academic-competitions",
       "competitions": [
         {
-          "name": "Smart India Hackathon (SIH)",
+          "name": "Smart India Hackathon",
           "category": "Innovation & Hackathon",
           "level": "National",
           "grades": "18–24 Years",
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Software & hardware innovation",
-          "official_website": "https://sih.gov.in",
+          "official_website": "https://ggits.org/sih_26",
           "verification_note": ""
         },
         {
@@ -1844,7 +1833,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Toy design & gamification",
-          "official_website": "https://aicte-india.org",
+          "official_website": "https://mic.gov.in/hackathon/toycathon",
           "verification_note": ""
         },
         {
@@ -1855,18 +1844,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐⭐",
           "best_for": "Cybersecurity & digital defence",
-          "official_website": "https://innovationcell.gov.in",
-          "verification_note": ""
-        },
-        {
-          "name": "Smart India Internal Hackathon",
-          "category": "Innovation",
-          "level": "National",
-          "grades": "18–24 Years",
-          "format": "Team",
-          "difficulty": "⭐⭐⭐",
-          "best_for": "Product development",
-          "official_website": "https://innovationcell.gov.in",
+          "official_website": "https://unstop.com/hackathons/cyberkavach-2025-ideaexpo-pimpri-chinchwad-college-of-engineering-pccoe-pune-1560074",
           "verification_note": ""
         },
         {
@@ -1881,7 +1859,7 @@
           "verification_note": ""
         },
         {
-          "name": "ATL Marathon",
+          "name": "Atal Tinkering Marathon",
           "category": "Innovation",
           "level": "National",
           "grades": "6–18 Years",
@@ -1910,7 +1888,7 @@
           "format": "Individual / Team",
           "difficulty": "⭐⭐",
           "best_for": "Startup ecosystem",
-          "official_website": "https://startupindia.gov.in",
+          "official_website": "https://www.startupindia.gov.in",
           "verification_note": ""
         },
         {
@@ -1932,7 +1910,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Engineering solutions",
-          "official_website": "https://aicte-india.org",
+          "official_website": "https://vishwakarma-awards.org",
           "verification_note": ""
         },
         {
@@ -1943,18 +1921,18 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐",
           "best_for": "Product innovation",
-          "official_website": "https://aicte-india.org",
+          "official_website": "https://bootcamp.mic.gov.in",
           "verification_note": ""
         },
         {
-          "name": "YUVIKA (Young Scientist Programme)",
+          "name": "ISRO Young Scientist Programme (YUVIKA)",
           "category": "Space",
           "level": "National",
           "grades": "Grade 9 & Above (14 Years & Above)",
           "format": "Individual",
           "difficulty": "⭐⭐",
           "best_for": "Space education",
-          "official_website": "https://jigyasa.iirs.gov.in",
+          "official_website": "https://jigyasa.iirs.gov.in/yuvika",
           "verification_note": ""
         },
         {
@@ -1965,7 +1943,7 @@
           "format": "Team",
           "difficulty": "⭐⭐⭐⭐",
           "best_for": "Space innovation",
-          "official_website": "https://isro.gov.in",
+          "official_website": "https://www.isro.gov.in",
           "verification_note": ""
         },
         {
